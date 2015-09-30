@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 
 @interface customCell : UITableViewCell

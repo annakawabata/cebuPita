@@ -7,6 +7,9 @@
 //
 
 #import "customCell.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
+#import "ViewController.h"
 
 @implementation customCell
 

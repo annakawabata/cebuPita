@@ -6,6 +6,7 @@
 //  Copyright (c) 2015年 Anna Kawabata. All rights reserved.
 //
 
+#import "ViewController.h"
 #import "CustomAnnotation.h"
 
 @implementation CustomAnnoation

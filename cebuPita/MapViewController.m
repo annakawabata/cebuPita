@@ -51,7 +51,7 @@
     [mapView setCenterCoordinate:locationCoordinate animated:NO];
     
     // CustomAnnotationクラスの初期化
-    CustomAnnotation *customAnnotation = [[CustomAnnotation alloc] initWithCoordinates:locationCoordinate newTitle:title newSubTitle:subTitle];
+    CustomAnnoation *customAnnotation = [[CustomAnnoation alloc] initWithCoordinates:locationCoordinate newTitle:title newSubTitle:subTitle];
     
     // annotationをマップに追加
     [mapView addAnnotation:customAnnotation];
@@ -78,7 +78,7 @@
     }
     
     // 画像をannotationに設定設定
-    annotationView.image = [UIImage imageNamed:@"test_icon.png"];
+    annotationView.image = [UIImage imageNamed:@"hospitalImage01.jpg"];
     annotationView.canShowCallout = YES;  // この設定で吹き出しが出る
     annotationView.annotation = annotation;
     

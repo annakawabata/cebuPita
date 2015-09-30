@@ -11,6 +11,7 @@
 #import "customCell.h"
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
+#import <Foundation/Foundation.h>
 
 
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
