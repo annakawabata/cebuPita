@@ -16,7 +16,10 @@
 		13685CB91BB12F7E001F1697 /* cebuPitaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CB81BB12F7E001F1697 /* cebuPitaTests.m */; };
 		13685D271BB4DA90001F1697 /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13685D261BB4DA90001F1697 /* customCell.xib */; };
 		13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D291BB4DB3D001F1697 /* customCell.m */; };
-		13685D611BBA3AE5001F1697 /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D601BBA3AE5001F1697 /* mapViewController.m */; };
+		13685D631BBBF747001F1697 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13685D621BBBF747001F1697 /* MapKit.framework */; };
+		13685D6C1BBC01A3001F1697 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */; };
+		13685D6E1BBC07F5001F1697 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13685D6D1BBC07F5001F1697 /* CoreLocation.framework */; };
+		13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D701BBC1C6F001F1697 /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +49,12 @@
 		13685D261BB4DA90001F1697 /* customCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCell.xib; sourceTree = "<group>"; };
 		13685D281BB4DB3D001F1697 /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
 		13685D291BB4DB3D001F1697 /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
-		13685D5F1BBA3AE5001F1697 /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
-		13685D601BBA3AE5001F1697 /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
+		13685D621BBBF747001F1697 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		13685D6A1BBC01A3001F1697 /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		13685D6D1BBC07F5001F1697 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		13685D6F1BBC1C6F001F1697 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		13685D701BBC1C6F001F1697 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13685D6E1BBC07F5001F1697 /* CoreLocation.framework in Frameworks */,
+				13685D631BBBF747001F1697 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +80,8 @@
 		13685C901BB12F7E001F1697 = {
 			isa = PBXGroup;
 			children = (
+				13685D6D1BBC07F5001F1697 /* CoreLocation.framework */,
+				13685D621BBBF747001F1697 /* MapKit.framework */,
 				13685C9B1BB12F7E001F1697 /* cebuPita */,
 				13685CB51BB12F7E001F1697 /* cebuPitaTests */,
 				13685C9A1BB12F7E001F1697 /* Products */,
@@ -94,14 +105,16 @@
 				13685CA11BB12F7E001F1697 /* AppDelegate.m */,
 				13685CA31BB12F7E001F1697 /* ViewController.h */,
 				13685CA41BB12F7E001F1697 /* ViewController.m */,
-				13685D5F1BBA3AE5001F1697 /* mapViewController.h */,
-				13685D601BBA3AE5001F1697 /* mapViewController.m */,
 				13685D261BB4DA90001F1697 /* customCell.xib */,
 				13685D281BB4DB3D001F1697 /* customCell.h */,
 				13685D291BB4DB3D001F1697 /* customCell.m */,
+				13685D6A1BBC01A3001F1697 /* CustomAnnotation.h */,
+				13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
+				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
+				13685D701BBC1C6F001F1697 /* MapViewController.m */,
 			);
 			path = cebuPita;
 			sourceTree = "<group>";
@@ -234,8 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13685CA51BB12F7E001F1697 /* ViewController.m in Sources */,
+				13685D6C1BBC01A3001F1697 /* CustomAnnotation.m in Sources */,
 				13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */,
-				13685D611BBA3AE5001F1697 /* mapViewController.m in Sources */,
+				13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */,
 				13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */,
 				13685C9F1BB12F7E001F1697 /* main.m in Sources */,
 			);

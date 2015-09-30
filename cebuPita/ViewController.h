@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 #import "customCell.h"
-#import "mapViewController.h"
+#import <MapKit/MapKit.h>
+#import "MapViewController.h"
+
 
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_hospitalArray;
