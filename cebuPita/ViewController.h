@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAd.h>
+#import "customCell.h"
+#import "mapViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
+    NSArray *_hospitalArray;
+}
+
+@property (weak, nonatomic) IBOutlet UITableView *myTableView;
 
 
 @end

@@ -14,6 +14,9 @@
 		13685CAA1BB12F7E001F1697 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13685CA91BB12F7E001F1697 /* Images.xcassets */; };
 		13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */; };
 		13685CB91BB12F7E001F1697 /* cebuPitaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CB81BB12F7E001F1697 /* cebuPitaTests.m */; };
+		13685D271BB4DA90001F1697 /* customCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13685D261BB4DA90001F1697 /* customCell.xib */; };
+		13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D291BB4DB3D001F1697 /* customCell.m */; };
+		13685D611BBA3AE5001F1697 /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D601BBA3AE5001F1697 /* mapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		13685CB21BB12F7E001F1697 /* cebuPitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cebuPitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13685CB71BB12F7E001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685CB81BB12F7E001F1697 /* cebuPitaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cebuPitaTests.m; sourceTree = "<group>"; };
+		13685D261BB4DA90001F1697 /* customCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customCell.xib; sourceTree = "<group>"; };
+		13685D281BB4DB3D001F1697 /* customCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customCell.h; sourceTree = "<group>"; };
+		13685D291BB4DB3D001F1697 /* customCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customCell.m; sourceTree = "<group>"; };
+		13685D5F1BBA3AE5001F1697 /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
+		13685D601BBA3AE5001F1697 /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +89,16 @@
 		13685C9B1BB12F7E001F1697 /* cebuPita */ = {
 			isa = PBXGroup;
 			children = (
+				13685CA61BB12F7E001F1697 /* Main.storyboard */,
 				13685CA01BB12F7E001F1697 /* AppDelegate.h */,
 				13685CA11BB12F7E001F1697 /* AppDelegate.m */,
 				13685CA31BB12F7E001F1697 /* ViewController.h */,
 				13685CA41BB12F7E001F1697 /* ViewController.m */,
-				13685CA61BB12F7E001F1697 /* Main.storyboard */,
+				13685D5F1BBA3AE5001F1697 /* mapViewController.h */,
+				13685D601BBA3AE5001F1697 /* mapViewController.m */,
+				13685D261BB4DA90001F1697 /* customCell.xib */,
+				13685D281BB4DB3D001F1697 /* customCell.h */,
+				13685D291BB4DB3D001F1697 /* customCell.m */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
@@ -201,6 +214,7 @@
 			files = (
 				13685CA81BB12F7E001F1697 /* Main.storyboard in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
+				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
 				13685CAA1BB12F7E001F1697 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +235,8 @@
 			files = (
 				13685CA51BB12F7E001F1697 /* ViewController.m in Sources */,
 				13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */,
+				13685D611BBA3AE5001F1697 /* mapViewController.m in Sources */,
+				13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */,
 				13685C9F1BB12F7E001F1697 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +432,7 @@
 				13685CBE1BB12F7E001F1697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13685CBF1BB12F7E001F1697 /* Build configuration list for PBXNativeTarget "cebuPitaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +441,7 @@
 				13685CC11BB12F7E001F1697 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
