@@ -12,6 +12,7 @@
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{

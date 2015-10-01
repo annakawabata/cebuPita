@@ -128,11 +128,11 @@
 				13685D291BB4DB3D001F1697 /* customCell.m */,
 				13685D6A1BBC01A3001F1697 /* CustomAnnotation.h */,
 				13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */,
+				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
+				13685D701BBC1C6F001F1697 /* MapViewController.m */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
-				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
-				13685D701BBC1C6F001F1697 /* MapViewController.m */,
 			);
 			path = cebuPita;
 			sourceTree = "<group>";

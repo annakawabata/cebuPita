@@ -11,17 +11,98 @@
 
 @interface MapViewController ()<MKMapViewDelegate>
 
-@property (nonatomic, retain) MKMapView *mapView;
 
 @end
 
 @implementation MapViewController
 
-@synthesize mapView;
+//@synthesize mapView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self mapCreate];
+    //[self mapCreate];
+    
+    //MapViewオブジェクトを生成
+    MKMapView *mapView = [[MKMapView alloc] init];
+    
+    //デリゲートを設定
+    mapView.delegate = self;
+    
+    //大きさ、位置を決定
+    mapView.frame = CGRectMake(0,20,self.view.bounds.size.width,self.view.bounds.size.height-20);
+    
+    //表示位置を決定
+    CLLocationCoordinate2D co;
+    
+    //アヤラの位置を決定
+    co.latitude = 10.317347;//緯度
+    co.longitude = 123.905759;//軽度
+    
+    [mapView setCenterCoordinate:co];
+    
+    //縮尺を指定
+    MKCoordinateRegion cr = mapView.region;
+    
+    //地図の範囲を指定(緯度)
+    cr.span.latitudeDelta = 0.08;
+    
+    //地図の範囲を指定(軽度)
+    cr.span.longitudeDelta = 0.08;
+    
+    cr.center = co;
+    
+    [mapView setRegion:cr];
+    
+    //地図の表示種類の設定
+    mapView.mapType = MKMapTypeStandard;
+    MKPointAnnotation *pin1 = [[MKPointAnnotation alloc] init];
+    pin1.coordinate = CLLocationCoordinate2DMake(10.314564,123.891777);
+    
+    pin1.title = @"セブ・ドクターズ・ユニバーシティ病院";
+    pin1.subtitle = @"Cebu Doctor's Univercity Hospital";
+    
+    [mapView addAnnotation:pin1];
+    
+    MKPointAnnotation *pin2 = [[MKPointAnnotation alloc] init];
+    pin2.coordinate = CLLocationCoordinate2DMake(10.310474,123.890833);
+    
+    pin2.title = @"チョン・フア病院";
+    pin2.subtitle = @"Chong Hua Hospital";
+    
+    [mapView addAnnotation:pin2];
+    
+    
+    MKPointAnnotation *pin3 = [[MKPointAnnotation alloc] init];
+    pin3.coordinate = CLLocationCoordinate2DMake(10.315615,123.895822);
+    
+    pin3.title = @"パーパチュアル・スコア病院";
+    pin3.subtitle = @"Perpetual Succour Hospital";
+    
+    [mapView addAnnotation:pin3];
+    
+    
+    MKPointAnnotation *pin4 = [[MKPointAnnotation alloc] init];
+    pin4.coordinate = CLLocationCoordinate2DMake(10.296605,123.88854);
+    
+    pin4.title = @"ドクターデンタルクリニック";
+    pin4.subtitle = @"Docor Dental Clinic";
+    
+    [mapView addAnnotation:pin4];
+    
+    
+    MKPointAnnotation *pin5 = [[MKPointAnnotation alloc] init];
+    pin5.coordinate = CLLocationCoordinate2DMake(10.321574,123.912808);
+    
+    pin5.title = @"桜デンタルクリニック";
+    pin5.subtitle = @"Sakura Dental Clinic";
+    
+    [mapView addAnnotation:pin5];
+    
+    
+    
+    //表示するためにViewに追加
+    [self.view addSubview:mapView];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,108 +110,33 @@
    
 }
 
-- (void) mapCreate
-{
-    /* 本当はここを動的に変更できるようにするといいと思う */
-    // 緯度経度
-    float now_latitude = 35.7100721; // 経度
-    float now_longitude = 139.809471; // 緯度
-    // タイトル/サブタイトル
-    NSString *title = @"たいとる";
-    NSString *subTitle = @"さぶさぶさぶ";
-    /* 本当はここを動的に変更できるようにするといいと思う */
-    
-    // 経度緯度設定
-    CLLocationCoordinate2D locationCoordinate = CLLocationCoordinate2DMake(now_latitude, now_longitude);
-    
-    // マップ生成
-    mapView = [[MKMapView alloc] init];
-    mapView.frame = CGRectMake(0,0,320,480);
-    mapView.delegate = self;
-    mapView.showsUserLocation = YES;  // ユーザの現在地を表示するように設定
-    [mapView setCenterCoordinate:locationCoordinate animated:NO];
-    
-    // CustomAnnotationクラスの初期化
-    CustomAnnoation *customAnnotation = [[CustomAnnoation alloc] initWithCoordinates:locationCoordinate newTitle:title newSubTitle:subTitle];
-    
-    // annotationをマップに追加
-    [mapView addAnnotation:customAnnotation];
-    
-    // マップを表示
-    [self.view addSubview:self.mapView];
-}
 
-#pragma - mapkit delegate
 
-- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation
-{
-    MKAnnotationView *annotationView;
+    //ピンを表示する際に発動されるデリゲートメソッド
+    //ピンが降ってくるアニメーションの設定
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
     
-    // 再利用可能なannotationがあるかどうかを判断するための識別子を定義
-    NSString *identifier = @"Pin";
     
-    // "Pin"という識別子のついたannotationを使いまわせるかチェック
-    annotationView = (MKAnnotationView*)[self.mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
-    
-    // 使い回しができるannotationがない場合、annotationの初期化
-    if(annotationView == nil) {
-        annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+    //現在地表示なら nil を返す
+    if(annotation == mapView.userLocation){
+        return nil;
     }
+    static NSString *pinIdentifier = @"PinAnnotationID";
     
-    // 画像をannotationに設定設定
-    annotationView.image = [UIImage imageNamed:@"hospitalImage01.jpg"];
-    annotationView.canShowCallout = YES;  // この設定で吹き出しが出る
-    annotationView.annotation = annotation;
+    //ピン情報の再利用
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIdentifier];
     
-    //ボタンの種類を指定（ここがないとタッチできない）
-    UIButton *detailButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-    annotationView.rightCalloutAccessoryView = detailButton;
-    
-    return annotationView;
-}
-
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
-    
-    NSLog(@"ピンの吹き出しが押された");
-    
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Safariで開きますか？" message:@"どうすんの？" delegate:self cancelButtonTitle:nil otherButtonTitles:@"はい", @"いいえ", nil];
-    [alert show];
-}
-
-#pragma - alertview delegate
-
--(void)alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    
-    
-    /* 本当はここを動的に変更できるようにするといいと思う */
-    float now_latitude = 35.7100721; // 経度
-    float now_longitude = 139.809471; // 緯度
-    /* 本当はここを動的に変更できるようにするといいと思う */
-    
-    
-    // マップAPIへ投げるURLの準備
-    NSString *apiUrl = @"http://maps.google.co.jp/maps?q=";
-    
-    // マップAPIへ投げるURLにパラメタを設定（文字列連結）
-    NSString *url = [NSString stringWithFormat:@"%@%f,%f(here!)&hl=ja", apiUrl, now_latitude, now_longitude];
-    
-    NSLog(@"マップAPIに投げるURL = %@", url);
-    
-    switch (buttonIndex)
-    {
-        case 0:
-            //１番目のボタンが押されたときの処理を記述する
-            NSLog(@"safariに飛ばすよ");
-            // safariに飛ばす
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-            
-            break;
-        case 1:
-            //２番目のボタンが押されたときの処理を記述する
-            NSLog(@"キャンセルされたよ");
-            break;
+    if(pinView == nil){
+        //初期化
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIdentifier];
+        
+        //落ちるアニメーションの設定
+        pinView.animatesDrop = YES;
     }
+    //吹き出し設定
+    pinView.canShowCallout = YES;
+    
+    return pinView;
 }
-
 
 @end

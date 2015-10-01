@@ -40,18 +40,21 @@
     
     //使用する
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"Cell"];
+    
+    
+    
 
     
 }
 
 
-//行数を返す
+    //行数を返す
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _hospitalArray.count;
 }
 
 
-//定数を宣言
+    //定数を宣言
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
@@ -65,14 +68,38 @@
     
     
     
+    
     //セルの再利用(id名をつける)
     customCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     cell.mapImageView.image = [UIImage imageNamed:_hospitalArray[indexPath.row][@"image"]];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
     
     
     cell.hospitalLabel.text = _hospitalArray[indexPath.row][@"name"];
     cell.hospitalTextView.text = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@",_hospitalArray[indexPath.row][@"address"],_hospitalArray[indexPath.row][@"phoneNumber"],_hospitalArray[indexPath.row][@"cost"],_hospitalArray[indexPath.row][@"time"],_hospitalArray[indexPath.row][@"langage"]];
+    
+    // For even
+    if (indexPath.row % 2 == 0) {
+        cell.textLabel.text = @"";
+        cell.detailTextLabel.text = @"green";
+        cell.backgroundColor = [UIColor colorWithHue:0.45
+                                          saturation:0.08
+                                          brightness:0.99
+                                               alpha:1.0];     // does not work
+
+        // does not work
+    }
+    // For odd
+    else {
+        cell.textLabel.text = @"";
+        cell.detailTextLabel.text = @"blue";
+        cell.backgroundColor = [UIColor colorWithHue:0.65
+                                          saturation:0.08
+                                          brightness:0.99
+                                               alpha:1.0];     // does not work
+    }
+    
     return cell;
 }
 
@@ -82,26 +109,26 @@
 }
 
 
-//
-////行が押されたときに反応
-//- (void)tableView:(UITableView *)tableView
-//didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-//    NSLog(@"行番号 = %ld",indexPath.row);
-//    
-//    //遷移(せんい)先画面のカプセル化(インスタンス化)
-//    //（移動した先の画面を実体化、指定できるよにした）
-//    mapViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"mapViewController"];
-//    
-//    //押された番号を遷移先画面のプロパティにセット
-//    //int型に変換する (int)indexPath.row
-//    //帰れない型だとエラーが出る
-//    //dvc.selectNum = (int)indexPath.row;
-//    
-//    //ナビゲーションコントローラーの機能で画面遷移
-//    //右側からくる動作がアニメーション：YESでアニメーション使用 NO:で使用しない
-//    [[self navigationController] pushViewController:dvc animated:YES];
-//    
-//}
+
+//行が押されたときに反応
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"行番号 = %ld",indexPath.row);
+    
+    //遷移(せんい)先画面のカプセル化(インスタンス化)
+    //（移動した先の画面を実体化、指定できるよにした）
+    MapViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
+    
+    //押された番号を遷移先画面のプロパティにセット
+    //int型に変換する (int)indexPath.row
+    //帰れない型だとエラーが出る
+    //dvc.selectNum = (int)indexPath.row;
+    
+    //ナビゲーションコントローラーの機能で画面遷移
+    //右側からくる動作がアニメーション：YESでアニメーション使用 NO:で使用しない
+    [[self navigationController] pushViewController:dvc animated:YES];
+    
+}
 
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
