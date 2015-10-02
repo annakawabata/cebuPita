@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133130731BBE264F000E757C /* vocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130721BBE264F000E757C /* vocabularyViewController.m */; };
+		133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130741BBE31E4000E757C /* vocabularyCell.xib */; };
 		13685C9F1BB12F7E001F1697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685C9E1BB12F7E001F1697 /* main.m */; };
 		13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA11BB12F7E001F1697 /* AppDelegate.m */; };
 		13685CA51BB12F7E001F1697 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA41BB12F7E001F1697 /* ViewController.m */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		133130711BBE264F000E757C /* vocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyViewController.h; sourceTree = "<group>"; };
+		133130721BBE264F000E757C /* vocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyViewController.m; sourceTree = "<group>"; };
+		133130741BBE31E4000E757C /* vocabularyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCell.xib; sourceTree = "<group>"; };
 		13685C991BB12F7E001F1697 /* cebuPita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cebuPita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13685C9D1BB12F7E001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685C9E1BB12F7E001F1697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -130,6 +135,9 @@
 				13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */,
 				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
 				13685D701BBC1C6F001F1697 /* MapViewController.m */,
+				133130711BBE264F000E757C /* vocabularyViewController.h */,
+				133130721BBE264F000E757C /* vocabularyViewController.m */,
+				133130741BBE31E4000E757C /* vocabularyCell.xib */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
@@ -269,6 +277,7 @@
 				13685D7C1BBC37E1001F1697 /* rennya_14.jpg in Resources */,
 				13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
+				133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */,
 				13685D821BBC3D89001F1697 /* sakura.jpg in Resources */,
 				13685CAA1BB12F7E001F1697 /* Images.xcassets in Resources */,
 				13685D761BBC227E001F1697 /* hospitalImage02.jpg in Resources */,
@@ -296,6 +305,7 @@
 				13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */,
 				13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */,
 				13685C9F1BB12F7E001F1697 /* main.m in Sources */,
+				133130731BBE264F000E757C /* vocabularyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

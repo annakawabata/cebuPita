@@ -12,6 +12,7 @@
 #import "MapViewController.h"
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
+#import "vocabularyViewController.h"
 
 
 @interface ViewController ()
