@@ -30,9 +30,41 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    //[self mapCreate];
+    
+    //MapViewオブジェクトを生成
+    // MKMapView *mapView = [[MKMapView alloc] init];
+    
+    //デリゲートを設定
+    // mapView.delegate = self;
     self.mapView.delegate = self;
-
+    
+    //大きさ、位置を決定
+    // mapView.frame = CGRectMake(0,20,self.view.bounds.size.width,self.view.bounds.size.height-20);
+    
+    //表示位置を決定
+    // CLLocationCoordinate2D co;
+    
+    //アヤラの位置を決定
+    // co.latitude = 10.317347;//緯度
+    // co.longitude = 123.905759;//軽度
+    
+    // [mapView setCenterCoordinate:co];
+    
+    //縮尺を指定
+    // MKCoordinateRegion cr = mapView.region;
+    
+    //地図の範囲を指定(緯度)
+    // cr.span.latitudeDelta = 1;
+    
+    //地図の範囲を指定(軽度)
+    // cr.span.longitudeDelta = 1;
+    
+    // cr.center = co;
+    
+    // [mapView setRegion:cr];
+    
+    
     //地図の表示種類の設定
     self.mapView.mapType = MKMapTypeStandard;
     MKPointAnnotation *pin1 = [[MKPointAnnotation alloc] init];
@@ -78,6 +110,8 @@
     
     [self.mapView addAnnotation:pin5];
     
+    
+    
     /*
      location設定
      */
@@ -102,7 +136,8 @@
         //精度要求
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         //最小移動間隔
-        self.locationManager.distanceFilter = 100.0; //100m 移動ごとに通知
+        self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
+        //        self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
         
         //測位開始
         [self.locationManager startUpdatingLocation];
@@ -122,10 +157,10 @@
 }
 
 
-    /*
-    CLLocationManagerDelegate
-    */
-    //位置情報更新時に呼ばれる
+/*
+ CLLocationManagerDelegate
+ */
+//位置情報更新時に呼ばれる
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {
     //ユーザの位置を表示するかどうか
@@ -143,13 +178,61 @@
         [self.mapView setRegion:newRegion animated:YES];
         alreadyStartingCoordinateSet_ = YES;
     }
+    
+    //ビュー上のラベルを更新
+//    self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
+//    self.longi.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
+    
 }
-
 
 //測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     NSLog(@"didFailWithError.");
 }
+
+//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+//{
+//    //ユーザの位置を表示するかどうか
+//    _mapView.showsUserLocation = YES;
+
+//    //最新の位置情報を取得し、そこからマップの中心座標を決定
+//    CLLocation *currentLocation = locations.lastObject;
+//    CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
+//    //縮尺度を指定
+//    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.1, 0.1); //数が小さいほど拡大率アップ
+
+//}
+////測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
+//- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+//{
+//    NSLog(@"didFailWithError.");
+//}
+//    //ピンを表示する際に発動されるデリゲートメソッド
+//    //ピンが降ってくるアニメーションの設定
+//-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+
+
+//    //現在地表示なら nil を返す
+//    if(annotation == mapView.userLocation){
+//        return nil;
+//    }
+//    static NSString *pinIdentifier = @"PinAnnotationID";
+//    
+//    //ピン情報の再利用
+//    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIdentifier];
+//    
+//    if(pinView == nil){
+//        //初期化
+//        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIdentifier];
+//        
+//        //落ちるアニメーションの設定
+//        pinView.animatesDrop = YES;
+//    }
+//    //吹き出し設定
+//    pinView.canShowCallout = YES;
+//    
+//    return pinView;
+//}
 
 @end

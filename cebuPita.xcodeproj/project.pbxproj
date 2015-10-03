@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		133130731BBE264F000E757C /* vocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130721BBE264F000E757C /* vocabularyViewController.m */; };
 		133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130741BBE31E4000E757C /* vocabularyCell.xib */; };
+		133130781BBE8E5B000E757C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130771BBE8E5B000E757C /* DetailViewController.m */; };
 		13685C9F1BB12F7E001F1697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685C9E1BB12F7E001F1697 /* main.m */; };
 		13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA11BB12F7E001F1697 /* AppDelegate.m */; };
 		13685CA51BB12F7E001F1697 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA41BB12F7E001F1697 /* ViewController.m */; };
@@ -47,6 +48,8 @@
 		133130711BBE264F000E757C /* vocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyViewController.h; sourceTree = "<group>"; };
 		133130721BBE264F000E757C /* vocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyViewController.m; sourceTree = "<group>"; };
 		133130741BBE31E4000E757C /* vocabularyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCell.xib; sourceTree = "<group>"; };
+		133130761BBE8E5B000E757C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		133130771BBE8E5B000E757C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		13685C991BB12F7E001F1697 /* cebuPita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cebuPita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13685C9D1BB12F7E001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685C9E1BB12F7E001F1697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */,
 				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
 				13685D701BBC1C6F001F1697 /* MapViewController.m */,
+				133130761BBE8E5B000E757C /* DetailViewController.h */,
+				133130771BBE8E5B000E757C /* DetailViewController.m */,
 				133130711BBE264F000E757C /* vocabularyViewController.h */,
 				133130721BBE264F000E757C /* vocabularyViewController.m */,
 				133130741BBE31E4000E757C /* vocabularyCell.xib */,
@@ -302,6 +307,7 @@
 				13685CA51BB12F7E001F1697 /* ViewController.m in Sources */,
 				13685D6C1BBC01A3001F1697 /* CustomAnnotation.m in Sources */,
 				13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */,
+				133130781BBE8E5B000E757C /* DetailViewController.m in Sources */,
 				13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */,
 				13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */,
 				13685C9F1BB12F7E001F1697 /* main.m in Sources */,

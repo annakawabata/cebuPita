@@ -39,7 +39,7 @@
         <!--Item-->
         <scene sceneID="iq2-kI-daq">
             <objects>
-                <viewController storyboardIdentifier="vocabularyViewController" id="A1e-mk-4KB" customClass="vocabularyViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vocabularyViewController" id="A1e-mk-4KB" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xrb-ON-VBI"/>
                         <viewControllerLayoutGuide type="bottom" id="44c-e2-H5d"/>
@@ -89,6 +89,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yom-90-z9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2312" y="-472"/>
+        </scene>
+        <!--Vocabulary View Controller-->
+        <scene sceneID="Y8n-e1-aQU">
+            <objects>
+                <viewController id="35q-jQ-ese" customClass="vocabularyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tgS-X6-LfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="7vf-zk-um0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XxQ-3n-Vyv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIP-Ty-RLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="256"/>
         </scene>
         <!--Item-->
         <scene sceneID="fnZ-hD-TyU">
