@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		133130731BBE264F000E757C /* vocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130721BBE264F000E757C /* vocabularyViewController.m */; };
 		133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130741BBE31E4000E757C /* vocabularyCell.xib */; };
-		133130781BBE8E5B000E757C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130771BBE8E5B000E757C /* DetailViewController.m */; };
+		1331307A1BC0FE23000E757C /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130791BC0FE23000E757C /* DetailViewCell.xib */; };
+		1331307D1BC0FF89000E757C /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331307C1BC0FF89000E757C /* DetailTableViewCell.m */; };
+		133130801BC10714000E757C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331307F1BC10714000E757C /* DetailViewController.m */; };
+		133130851BC1151E000E757C /* cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130811BC1151E000E757C /* cold.jpg */; };
+		133130861BC1151E000E757C /* injury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130821BC1151E000E757C /* injury.jpg */; };
+		133130871BC1151E000E757C /* outo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130831BC1151E000E757C /* outo.jpg */; };
+		133130881BC1151E000E757C /* stomach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130841BC1151E000E757C /* stomach.jpg */; };
+		1331308A1BC11574000E757C /* eye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130891BC11574000E757C /* eye.jpg */; };
+		1331308D1BC133B4000E757C /* vocabularyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */; };
 		13685C9F1BB12F7E001F1697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685C9E1BB12F7E001F1697 /* main.m */; };
 		13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA11BB12F7E001F1697 /* AppDelegate.m */; };
 		13685CA51BB12F7E001F1697 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA41BB12F7E001F1697 /* ViewController.m */; };
@@ -48,8 +56,18 @@
 		133130711BBE264F000E757C /* vocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyViewController.h; sourceTree = "<group>"; };
 		133130721BBE264F000E757C /* vocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyViewController.m; sourceTree = "<group>"; };
 		133130741BBE31E4000E757C /* vocabularyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCell.xib; sourceTree = "<group>"; };
-		133130761BBE8E5B000E757C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		133130771BBE8E5B000E757C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		133130791BC0FE23000E757C /* DetailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewCell.xib; sourceTree = "<group>"; };
+		1331307B1BC0FF89000E757C /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		1331307C1BC0FF89000E757C /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		1331307E1BC10714000E757C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1331307F1BC10714000E757C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		133130811BC1151E000E757C /* cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cold.jpg; sourceTree = "<group>"; };
+		133130821BC1151E000E757C /* injury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = injury.jpg; sourceTree = "<group>"; };
+		133130831BC1151E000E757C /* outo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outo.jpg; sourceTree = "<group>"; };
+		133130841BC1151E000E757C /* stomach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stomach.jpg; sourceTree = "<group>"; };
+		133130891BC11574000E757C /* eye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eye.jpg; sourceTree = "<group>"; };
+		1331308B1BC133B4000E757C /* vocabularyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyTableViewCell.h; sourceTree = "<group>"; };
+		1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyTableViewCell.m; sourceTree = "<group>"; };
 		13685C991BB12F7E001F1697 /* cebuPita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cebuPita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13685C9D1BB12F7E001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685C9E1BB12F7E001F1697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -138,10 +156,15 @@
 				13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */,
 				13685D6F1BBC1C6F001F1697 /* MapViewController.h */,
 				13685D701BBC1C6F001F1697 /* MapViewController.m */,
-				133130761BBE8E5B000E757C /* DetailViewController.h */,
-				133130771BBE8E5B000E757C /* DetailViewController.m */,
+				1331307E1BC10714000E757C /* DetailViewController.h */,
+				1331307F1BC10714000E757C /* DetailViewController.m */,
+				1331307B1BC0FF89000E757C /* DetailTableViewCell.h */,
+				1331307C1BC0FF89000E757C /* DetailTableViewCell.m */,
+				133130791BC0FE23000E757C /* DetailViewCell.xib */,
 				133130711BBE264F000E757C /* vocabularyViewController.h */,
 				133130721BBE264F000E757C /* vocabularyViewController.m */,
+				1331308B1BC133B4000E757C /* vocabularyTableViewCell.h */,
+				1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */,
 				133130741BBE31E4000E757C /* vocabularyCell.xib */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
@@ -180,6 +203,11 @@
 		13685D721BBC206D001F1697 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				133130891BC11574000E757C /* eye.jpg */,
+				133130811BC1151E000E757C /* cold.jpg */,
+				133130821BC1151E000E757C /* injury.jpg */,
+				133130831BC1151E000E757C /* outo.jpg */,
+				133130841BC1151E000E757C /* stomach.jpg */,
 				13685D831BBC3E22001F1697 /* cebudental.jpg */,
 				13685D811BBC3D89001F1697 /* sakura.jpg */,
 				13685D7D1BBC3C80001F1697 /* cebudoc.jpg */,
@@ -273,14 +301,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1331307A1BC0FE23000E757C /* DetailViewCell.xib in Resources */,
 				13685CA81BB12F7E001F1697 /* Main.storyboard in Resources */,
 				13685D801BBC3C80001F1697 /* papatual.jpg in Resources */,
 				13685D7B1BBC37E1001F1697 /* medicin.jpeg in Resources */,
+				133130871BC1151E000E757C /* outo.jpg in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
 				13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */,
 				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
 				13685D7C1BBC37E1001F1697 /* rennya_14.jpg in Resources */,
+				1331308A1BC11574000E757C /* eye.jpg in Resources */,
+				133130881BC1151E000E757C /* stomach.jpg in Resources */,
 				13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */,
+				133130861BC1151E000E757C /* injury.jpg in Resources */,
+				133130851BC1151E000E757C /* cold.jpg in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
 				133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */,
 				13685D821BBC3D89001F1697 /* sakura.jpg in Resources */,
@@ -306,10 +340,12 @@
 			files = (
 				13685CA51BB12F7E001F1697 /* ViewController.m in Sources */,
 				13685D6C1BBC01A3001F1697 /* CustomAnnotation.m in Sources */,
+				133130801BC10714000E757C /* DetailViewController.m in Sources */,
 				13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */,
-				133130781BBE8E5B000E757C /* DetailViewController.m in Sources */,
+				1331307D1BC0FF89000E757C /* DetailTableViewCell.m in Sources */,
 				13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */,
 				13685D2A1BB4DB3D001F1697 /* customCell.m in Sources */,
+				1331308D1BC133B4000E757C /* vocabularyTableViewCell.m in Sources */,
 				13685C9F1BB12F7E001F1697 /* main.m in Sources */,
 				133130731BBE264F000E757C /* vocabularyViewController.m in Sources */,
 			);

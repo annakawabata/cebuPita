@@ -13,7 +13,9 @@
 #import "MapViewController.h"
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#import "vocabularyViewController.h"
+#import "DetailViewController.h"
+
+
 
 
 

@@ -13,6 +13,7 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 #import "vocabularyViewController.h"
+#import "DetailViewController.h"
 
 
 @interface ViewController ()
@@ -68,13 +69,11 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     
     
-    
-    
     //セルの再利用(id名をつける)
     customCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     cell.mapImageView.image = [UIImage imageNamed:_hospitalArray[indexPath.row][@"image"]];
-    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor clearColor];
     
     
     cell.hospitalLabel.text = _hospitalArray[indexPath.row][@"name"];

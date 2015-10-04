@@ -10,9 +10,14 @@
 #import "ViewController.h"
 
 @interface vocabularyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
-    NSArray *_vocabularyArray;
-    NSArray *dataDetail1;//メンバー変数を宣言
+    NSArray *_vocabularyArray1;
+    NSArray *_vocabularyArray2;
+    NSArray *_vocabularyArray3;
+    NSArray *_vocabularyArray4;
+    NSArray *_vocabularyArray5;
+    NSArray *_vocabularyArray6;
 }
 @property (weak, nonatomic) IBOutlet UITableView *vocabularyTableView;
+@property (nonatomic,assign) int selectNum;
 
 @end
