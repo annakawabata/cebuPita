@@ -34,7 +34,12 @@
                           @"snow blindness",
                           @"飛蚊症",
                           @"floaters",
-                          ];
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray2 = @[@"お腹が痛い",
                           @"I have.",
@@ -47,7 +52,13 @@
                           @"けいれん性の腹痛",
                           @"abdominal cramps ",
                           @"便秘",
-                          @"constipation"];
+                          @"constipation",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray3 = @[@"吐き気がする",
                           @"I'm nauseated",
@@ -58,7 +69,13 @@
                           @"昨日何回嘔吐しましたか？",
                           @"How many times did you vomit yesterday?",
                           @"ひどい、過度の嘔吐",
-                          @"severe and excessive vomiting "];
+                          @"severe and excessive vomiting ",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray4 = @[@"鼻水",
                           @"runny nose",
@@ -73,7 +90,13 @@
                           @"インフルエンザ",
                           @"Flu / Influenza",
                           @"咳",
-                          @"cough"];
+                          @"cough",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray5 = @[@"打撲",
                           @"bruise",
@@ -106,7 +129,13 @@
                           @"骨折",
                           @"broke/fractured ",
                           @"ヒビが入った",
-                          @"fracture"];
+                          @"fracture",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray6 = @[@"健康保険証",
                           @"health insurance card",
@@ -139,7 +168,13 @@
                           @"領収書",
                           @"receipt",
                           @"診断書",
-                          @"certificate",];
+                          @"certificate",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @"",
+                          @""];
     
     _vocabularyArray7 = @[@"発疹 皮疹",
                           @"rash",
@@ -176,7 +211,7 @@
                           @"",
                           @"",
                           @"",
-                          @"",];
+                          @""];
 
     
     
