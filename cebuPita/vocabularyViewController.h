@@ -16,6 +16,7 @@
     NSArray *_vocabularyArray4;
     NSArray *_vocabularyArray5;
     NSArray *_vocabularyArray6;
+    NSArray *_vocabularyArray7;
 }
 @property (weak, nonatomic) IBOutlet UITableView *vocabularyTableView;
 @property (nonatomic,assign) int selectNum;

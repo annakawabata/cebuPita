@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _vocabularyArray = @[@"Eye" ,@"Stomach",@"Vomiting",@"cold",@"Injury"];
+    _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"その他：Others"];
     
     self.DetailTableView.delegate = self;
     self.DetailTableView.dataSource = self;
@@ -65,7 +65,11 @@
         cell.imageView.image = [UIImage imageNamed:@"injury.jpg"];
     }
     if(indexPath.row == 5){
-        cell.imageView.image = [UIImage imageNamed:@".jpg"];
+        cell.imageView.image = [UIImage imageNamed:@"hospital_uketsuke.jpg"];
+    }
+    if(indexPath.row == 6){
+        cell.imageView.image = [UIImage imageNamed:@"hospital004.jpg"];
+
 
     }
     
