@@ -12,7 +12,6 @@
 		1331307A1BC0FE23000E757C /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130791BC0FE23000E757C /* DetailViewCell.xib */; };
 		1331307D1BC0FF89000E757C /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331307C1BC0FF89000E757C /* DetailTableViewCell.m */; };
 		133130801BC10714000E757C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331307F1BC10714000E757C /* DetailViewController.m */; };
-		133130851BC1151E000E757C /* cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130811BC1151E000E757C /* cold.jpg */; };
 		133130861BC1151E000E757C /* injury.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130821BC1151E000E757C /* injury.jpg */; };
 		133130871BC1151E000E757C /* outo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130831BC1151E000E757C /* outo.jpg */; };
 		133130881BC1151E000E757C /* stomach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130841BC1151E000E757C /* stomach.jpg */; };
@@ -63,7 +62,6 @@
 		1331307C1BC0FF89000E757C /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		1331307E1BC10714000E757C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		1331307F1BC10714000E757C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		133130811BC1151E000E757C /* cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cold.jpg; sourceTree = "<group>"; };
 		133130821BC1151E000E757C /* injury.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = injury.jpg; sourceTree = "<group>"; };
 		133130831BC1151E000E757C /* outo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = outo.jpg; sourceTree = "<group>"; };
 		133130841BC1151E000E757C /* stomach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stomach.jpg; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 				133130901BC18B94000E757C /* hospital004.jpg */,
 				1331308E1BC180F8000E757C /* hospital_uketsuke.jpg */,
 				133130891BC11574000E757C /* eye.jpg */,
-				133130811BC1151E000E757C /* cold.jpg */,
 				133130821BC1151E000E757C /* injury.jpg */,
 				133130831BC1151E000E757C /* outo.jpg */,
 				133130841BC1151E000E757C /* stomach.jpg */,
@@ -321,7 +318,6 @@
 				133130881BC1151E000E757C /* stomach.jpg in Resources */,
 				13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */,
 				133130861BC1151E000E757C /* injury.jpg in Resources */,
-				133130851BC1151E000E757C /* cold.jpg in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
 				133130911BC18B94000E757C /* hospital004.jpg in Resources */,
 				133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */,

@@ -70,8 +70,8 @@
     if(indexPath.row == 6){
         cell.imageView.image = [UIImage imageNamed:@"hospital004.jpg"];
 
-
     }
+    
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray[indexPath.row]];
     
@@ -129,7 +129,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 80;
+    return 65;
 }
 
 
