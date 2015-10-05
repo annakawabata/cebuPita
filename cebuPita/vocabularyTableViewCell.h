@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface vocabularyTableViewCell : UITableViewCell<UITableViewDelegate,UITableViewDataSource>{
+@interface vocabularyTableViewCell : UITableViewCell{
     NSArray *_vocabularyArray1;
     NSArray *_vocabularyArray2;
     NSArray *_vocabularyArray3;

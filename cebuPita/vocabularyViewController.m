@@ -274,7 +274,6 @@
     
     
     
-    
     switch (self.selectNum) {
         case 0:
             cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray1[indexPath.row]];
@@ -302,8 +301,8 @@
     };
     
     if (indexPath.row % 2 == 0) {
-      //  cell.textLabel.text = @"";
-      //  cell.detailTextLabel.text = @"green";
+        // cell.textLabel.text = @"";
+        // cell.detailTextLabel.text = @"green";
         cell.backgroundColor = [UIColor colorWithHue:0.45
                                           saturation:0.08
                                           brightness:0.99
@@ -313,8 +312,8 @@
     }
     // For odd
     else {
-        //cell.textLabel.text = @"";
-       // cell.detailTextLabel.text = @"blue";
+        // cell.textLabel.text = @"";
+        // cell.detailTextLabel.text = @"blue";
         cell.backgroundColor = [UIColor colorWithHue:0.65
                                           saturation:0.08
                                           brightness:0.99
