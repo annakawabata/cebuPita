@@ -27,6 +27,12 @@
     
     self.title = @"Cebu Pita";
     
+    // 半透明にする.
+    UIColor* tableBackgroundColor = [UIColor blackColor];
+    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
+    
+    [self.myTableView setBackgroundColor:tableBackgroundColor];
+    
     
     //レストの内容になる配列を用意する
     _hospitalArray = @[@{@"name":@"Cebu Doctor's Univercity Hospital",@"address":@"Osmeña Boulevard, Cebu City, 6000 Cebu",@"phoneNumber":@"(032) 255 5555,032-516-3341（日本語直通）",@"cost":@"1500ペソ〜",@"time":@"午前9時～午後6時（月～金）,午前9時～12時（土）,24時間救急外来",@"langage":@"日本語可",@"image":@"cebudoc.jpg"},
@@ -62,6 +68,7 @@
     //定数を宣言
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
+    
     
     
     UIGraphicsBeginImageContext(self.view.frame.size);

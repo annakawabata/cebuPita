@@ -18,7 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"その他：Others",@""];
+    
+    // 半透明にする.
+    UIColor* tableBackgroundColor = [UIColor blackColor];
+    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
+    
+    [self.DetailTableView setBackgroundColor:tableBackgroundColor];
+    
+    _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"その他：Others"];
     
     self.DetailTableView.delegate = self;
     self.DetailTableView.dataSource = self;
@@ -34,6 +41,16 @@
 //定数を宣言
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
+
+    
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
@@ -129,7 +146,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 65;
+    return 62;
 }
 
 

@@ -18,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIColor* tableBackgroundColor = [UIColor blackColor];
+    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
+    
+    [self.vocabularyTableView setBackgroundColor:tableBackgroundColor];
+    
     _vocabularyArray1 = @[@"目が痛い",
                           @"I have sore eyes.",
                           @"結膜炎",
@@ -265,6 +270,14 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     
     
     vocabularyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
