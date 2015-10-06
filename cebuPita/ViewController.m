@@ -28,6 +28,7 @@
     self.title = @"Cebu Pita";
     
     
+    
     //レストの内容になる配列を用意する
     _hospitalArray = @[@{@"name":@"Cebu Doctor's Univercity Hospital",@"address":@"Osmeña Boulevard, Cebu City, 6000 Cebu",@"phoneNumber":@"(032) 255 5555,032-516-3341（日本語直通）",@"cost":@"1500ペソ〜",@"time":@"午前9時～午後6時（月～金）,午前9時～12時（土）,24時間救急外来",@"langage":@"日本語可",@"image":@"cebudoc.jpg"},
                      @{@"name":@"Chong Hua Hospital",@"address":@"Don Mariano Cui Street, Fuente Osmeña, Cebu City, 6000",@"phoneNumber":@"(032) 255 8000",@"cost":@"1500ペソ〜",@"time":@"",@"langage":@"英語",@"image":@"hospitalImage02.jpg"},
@@ -46,9 +47,6 @@
     //使用する
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"Cell"];
     
-    
-    
-
     
 }
 
