@@ -18,6 +18,7 @@
 		1331308A1BC11574000E757C /* eye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 133130891BC11574000E757C /* eye.jpg */; };
 		1331308D1BC133B4000E757C /* vocabularyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */; };
 		1331308F1BC180F8000E757C /* hospital_uketsuke.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1331308E1BC180F8000E757C /* hospital_uketsuke.jpg */; };
+		1338E7BE1BC60E4C00B982FA /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1338E7BD1BC60E4C00B982FA /* words.plist */; };
 		13685C9F1BB12F7E001F1697 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685C9E1BB12F7E001F1697 /* main.m */; };
 		13685CA21BB12F7E001F1697 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA11BB12F7E001F1697 /* AppDelegate.m */; };
 		13685CA51BB12F7E001F1697 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685CA41BB12F7E001F1697 /* ViewController.m */; };
@@ -68,6 +69,7 @@
 		1331308B1BC133B4000E757C /* vocabularyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyTableViewCell.h; sourceTree = "<group>"; };
 		1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyTableViewCell.m; sourceTree = "<group>"; };
 		1331308E1BC180F8000E757C /* hospital_uketsuke.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospital_uketsuke.jpg; sourceTree = "<group>"; };
+		1338E7BD1BC60E4C00B982FA /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 		13685C991BB12F7E001F1697 /* cebuPita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cebuPita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13685C9D1BB12F7E001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685C9E1BB12F7E001F1697 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				13685D721BBC206D001F1697 /* image */,
 				13685C9D1BB12F7E001F1697 /* Info.plist */,
 				13685C9E1BB12F7E001F1697 /* main.m */,
+				1338E7BD1BC60E4C00B982FA /* words.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				13685D821BBC3D89001F1697 /* sakura.jpg in Resources */,
 				13685CAA1BB12F7E001F1697 /* Images.xcassets in Resources */,
 				13685D761BBC227E001F1697 /* hospitalImage02.jpg in Resources */,
+				1338E7BE1BC60E4C00B982FA /* words.plist in Resources */,
 				13685D7F1BBC3C80001F1697 /* cebudoc.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

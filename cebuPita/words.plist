@@ -2,32 +2,32 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>New item</key>
+	<key>wordList</key>
 	<array>
-	<dict>
-		<key>vocabulary6</key>
-		<string>その他</string>
-		<key>words</key>
-		<array>
-			<string>発疹 皮疹 : rash</string>
-			<string>アレルギー : Allergy/allergies</string>
-			<string>かゆい、かゆみ : itchy/itchiness</string>
-			<string>アレルギー反応 : allergic reaction</string>
-			<string>関節の痛み : joint pain</string>
-			<string>筋肉痛 : have sore muscles</string>
-			<string>めまいがする : dizzy</string>
-			<string>感染 : infection</string>
-			<string>肺炎 : pneumonia</string>
-			<string>激痛 : severe pain</string>
-			<string>急性の痛み : acute pain</string>
-			<string>うずくような痛み : cramping pain</string>
-			<string>ずきずきする : throbbing pain</string>
-			<string>突っ張り感 : tension</string>
-			<string>生理、月経 : period</string>
-		</array>
-	</dict>
 		<dict>
-			<key>vocabulary6</key>
+			<key>title</key>
+			<string>その他</string>
+			<key>words</key>
+			<array>
+				<string>発疹 皮疹 : rash</string>
+				<string>アレルギー : Allergy/allergies</string>
+				<string>かゆい、かゆみ : itchy/itchiness</string>
+				<string>アレルギー反応 : allergic reaction</string>
+				<string>関節の痛み : joint pain</string>
+				<string>筋肉痛 : have sore muscles</string>
+				<string>めまいがする : dizzy</string>
+				<string>感染 : infection</string>
+				<string>肺炎 : pneumonia</string>
+				<string>激痛 : severe pain</string>
+				<string>急性の痛み : acute pain</string>
+				<string>うずくような痛み : cramping pain</string>
+				<string>ずきずきする : throbbing pain</string>
+				<string>突っ張り感 : tension</string>
+				<string>生理、月経 : period</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>受付</string>
 			<key>words</key>
 			<array>
@@ -50,7 +50,7 @@
 			</array>
 		</dict>
 		<dict>
-			<key>vocabulary5</key>
+			<key>title</key>
 			<string>怪我</string>
 			<key>words</key>
 			<array>
@@ -73,7 +73,7 @@
 			</array>
 		</dict>
 		<dict>
-			<key>vocabulary4</key>
+			<key>title</key>
 			<string>風邪</string>
 			<key>words</key>
 			<array>
@@ -87,7 +87,7 @@
 			</array>
 		</dict>
 		<dict>
-			<key>vocabulary3</key>
+			<key>title</key>
 			<string>嘔吐</string>
 			<key>words</key>
 			<array>
@@ -99,7 +99,7 @@
 			</array>
 		</dict>
 		<dict>
-			<key>vocabulary2</key>
+			<key>title</key>
 			<string>腹痛 : Stomach</string>
 			<key>words</key>
 			<array>
@@ -112,7 +112,7 @@
 			</array>
 		</dict>
 		<dict>
-			<key>vocabulary1</key>
+			<key>title</key>
 			<string>目 : Eye</string>
 			<key>words</key>
 			<array>

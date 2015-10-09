@@ -15,6 +15,7 @@
     NSArray *_vocabularyArray4;
     NSArray *_vocabularyArray5;
     NSArray *_vocabularyArray6;
+    NSArray *_areaList;
 }
 @property (weak, nonatomic) IBOutlet UILabel *vocabularyLabel;
 
