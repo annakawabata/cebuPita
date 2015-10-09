@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>wordList</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>その他</string>
+			<key>words</key>
+			<array>
+				<string>発疹 皮疹 : rash</string>
+				<string>アレルギー : Allergy/allergies</string>
+				<string>かゆい、かゆみ : itchy/itchiness</string>
+				<string>アレルギー反応 : allergic reaction</string>
+				<string>関節の痛み : joint pain</string>
+				<string>筋肉痛 : have sore muscles</string>
+				<string>めまいがする : dizzy</string>
+				<string>感染 : infection</string>
+				<string>肺炎 : pneumonia</string>
+				<string>激痛 : severe pain</string>
+				<string>急性の痛み : acute pain</string>
+				<string>うずくような痛み : cramping pain</string>
+				<string>ずきずきする : throbbing pain</string>
+				<string>突っ張り感 : tension</string>
+				<string>生理、月経 : period</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>受付</string>
+			<key>words</key>
+			<array>
+				<string>健康保険証 : health insurance card</string>
+				<string>診察申込書 : registration form</string>
+				<string>初診 : first visit</string>
+				<string>再診 : return visit</string>
+				<string>予約 : appointment</string>
+				<string>外来患者 : outpatient</string>
+				<string>紹介状 : reference from other doctor</string>
+				<string>旅行保険 : travel insurance</string>
+				<string>問診票 : medical questionnaire</string>
+				<string>救急病棟、急患 : emergency</string>
+				<string>患者 : patient</string>
+				<string>カルテ : a medical record</string>
+				<string>家族（血縁関係者）の病気の歴史 : family history</string>
+				<string>診断書 : certificate</string>
+				<string>支払い : payment/co-payment</string>
+				<string>領収書 : receipt</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>怪我</string>
+			<key>words</key>
+			<array>
+				<string>打撲 : bruise</string>
+				<string>脱臼する : dislocate</string>
+				<string>切り傷 : cut</string>
+				<string>アキレス腱 : achilles heel</string>
+				<string>打撲 : bruise</string>
+				<string>骨折 : broke/fractured</string>
+				<string>ヒビが入った : fracture</string>
+				<string>足首をひねる : twist my ankle</string>
+				<string>捻挫する : sprain</string>
+				<string>擦りむく : scrape my knee</string>
+				<string>たんこぶ : bump</string>
+				<string>爪が割れる/剥がれる : break my nail</string>
+				<string>すねをぶつける : bang my shin</string>
+				<string>つる : have a cramp</string>
+				<string>突き指をする : jam my finger</string>
+				<string>靱帯を切る : tear a ligament</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>風邪</string>
+			<key>words</key>
+			<array>
+				<string>鼻水 : runny nose</string>
+				<string>喉が痛い : I have a sore throat.</string>
+				<string>熱 : fever</string>
+				<string>咳 : cough</string>
+				<string>寒気 : chill</string>
+				<string>インフルエンザ : Flu / Influenza</string>
+				<string>だるさ : tiredness</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>嘔吐</string>
+			<key>words</key>
+			<array>
+				<string>吐き気がする : I&apos;m nauseated</string>
+				<string>ひどい、過度の嘔吐 : severe and excessive vomiting</string>
+				<string>嘔吐しました : I vomited.</string>
+				<string>昨日何回嘔吐しましたか？ : How many times did you vomit yesterday?</string>
+				<string>嘔吐と下痢をする :  vomit and have loose bowels</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>腹痛 : Stomach</string>
+			<key>words</key>
+			<array>
+				<string>腹痛 : stomachache.</string>
+				<string>下痢 : loose bowels</string>
+				<string>胃が痛い : I have a pain in my upper stomach.</string>
+				<string>けいれん性の腹痛 : abdominal cramps</string>
+				<string>生理痛 : cramps</string>
+				<string>便秘 : constipation</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>目 : Eye</string>
+			<key>words</key>
+			<array>
+				<string>結膜炎 : pink eye/cnjunctivitis</string>
+				<string>近視/遠視 : near-sighted/far-sighted</string>
+				<string>目の周りにできる黒いアザ : black eye</string>
+				<string>目がかすむ : blurry/blurred</string>
+				<string>弱視 : lazy eye</string>
+				<string>飛蚊症 : floaters</string>
+				<string>目が痛い : sore eyes</string>
+				<string>目のやけど : snow blindness</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

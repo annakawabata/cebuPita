@@ -18,204 +18,135 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _vocabularyArray1 = @[@"目が痛い",
-                          @"I have sore eyes.",
-                          @"結膜炎",
-                          @"pink eye / conjunctivitis",
-                          @"目の周りにできる黒いアザ",
-                          @"black eye",
-                          @"弱視",
-                          @"lazy eye",
-                          @"目がかすむ",
-                          @"blurry / blurred",
-                          @"近視／遠視",
-                          @"near-sighted／far-sighted",
-                          @"紫外線による目のヤケド",
-                          @"snow blindness",
-                          @"飛蚊症",
-                          @"floaters",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
+    UIColor* tableBackgroundColor = [UIColor blackColor];
+    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
     
-    _vocabularyArray2 = @[@"お腹が痛い",
-                          @"I have.",
-                          @"胃が痛い",
-                          @"I have a pain in my upper stomach. ",
-                          @"生理痛",
-                          @"cramps",
-                          @"下痢",
-                          @"loose bowels",
-                          @"けいれん性の腹痛",
-                          @"abdominal cramps ",
-                          @"便秘",
-                          @"constipation",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-    
-    _vocabularyArray3 = @[@"吐き気がする",
-                          @"I'm nauseated",
-                          @"嘔吐しました",
-                          @"I vomited.",
-                          @"嘔吐と下痢をする",
-                          @"to vomit and have loose bowels",
-                          @"昨日何回嘔吐しましたか？",
-                          @"How many times did you vomit yesterday?",
-                          @"ひどい、過度の嘔吐",
-                          @"severe and excessive vomiting ",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-    
-    _vocabularyArray4 = @[@"鼻水",
-                          @"runny nose",
-                          @"熱",
-                          @"fever",
-                          @"寒気",
-                          @"chill",
-                          @"喉が痛い",
-                          @"I have a sore throat.",
-                          @"だるさ",
-                          @"tiredness",
-                          @"インフルエンザ",
-                          @"Flu / Influenza",
-                          @"咳",
-                          @"cough",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-    
-    _vocabularyArray5 = @[@"打撲",
-                          @"bruise",
-                          @"切り傷",
-                          @"cut",
-                          @"打撲",
-                          @"bruise",
-                          @"脱臼する",
-                          @"dislocate",
-                          @"アキレス腱が切れる",
-                          @"tear my achilles heel",
-                          @"たんこぶ",
-                          @"bump",
-                          @"すねをぶつける",
-                          @"bang my shin",
-                          @"突き指をする",
-                          @"jam my finger",
-                          @"爪が割れる/剥がれる",
-                          @"break my nail",
-                          @"つる",
-                          @"have a cramp",
-                          @"靱帯を切る",
-                          @"tear a ligament",
-                          @"擦りむく",
-                          @"scrape my knee",
-                          @"捻挫する",
-                          @"sprain",
-                          @"足首をひねる",
-                          @"twist my ankle",
-                          @"骨折",
-                          @"broke/fractured ",
-                          @"ヒビが入った",
-                          @"fracture",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-    
-    _vocabularyArray6 = @[@"健康保険証",
-                          @"health insurance card",
-                          @"診察申込書",
-                          @"registration form",
-                          @"初診",
-                          @"first visit",
-                          @"再診",
-                          @"return visit",
-                          @"外来患者",
-                          @"outpatient",
-                          @"患者",
-                          @"patient",
-                          @"紹介状",
-                          @"reference from other doctor",
-                          @"問診票",
-                          @"medical questionnaire",
-                          @"救急病棟、急患",
-                          @"emergency",
-                          @"カルテ",
-                          @"a medical record",
-                          @"支払い",
-                          @"payment/co-payment",
-                          @"予約",
-                          @"appointment",
-                          @"家族（血縁関係者）の病気の歴史",
-                          @"family history",
-                          @"旅行保険",
-                          @"travel insurance",
-                          @"領収書",
-                          @"receipt",
-                          @"診断書",
-                          @"certificate",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-    
-    _vocabularyArray7 = @[@"発疹 皮疹",
-                          @"rash",
-                          @"かゆい、かゆみ",
-                          @"itchy/itchiness",
-                          @"関節の痛み",
-                          @"joint pain",
-                          @"めまいがする",
-                          @"dizzy",
-                          @"肺炎",
-                          @"pneumonia",
-                          @"アレルギー反応",
-                          @"allergic reaction",
-                          @"感染",
-                          @"infection",
-                          @"アレルギー　発音は、アレジー",
-                          @"Allergy/allergies",
-                          @"激痛",
-                          @"severe pain",
-                          @"急性の痛み",
-                          @"acute pain",
-                          @"うずくような痛み",
-                          @"cramping pain",
-                          @"ずきずきする",
-                          @"throbbing pain",
-                          @"突っ張り感",
-                          @"tension",
-                          @"筋肉痛になる",
-                          @"have sore muscles",
-                          @"生理、月経",
-                          @"period",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @"",
-                          @""];
-
+    [self.vocabularyTableView setBackgroundColor:tableBackgroundColor];
     
     
+    //プロジェクト内のファイルにアクセスするオブジェクトを作成
+    NSBundle *bundle = [NSBundle mainBundle];
     
+    //読み込むプロパティリストのファイルパス（場所）を指定
+    
+    NSString *path = [bundle pathForResource:@"words" ofType:@"plist"];
+    
+    //プロパティリストの中身のデータを取得
+    NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSArray *wordList = [dic objectForKey:@"wordList"];
+    
+    for (NSDictionary *word in wordList) {
+        NSLog(@"title=%@",word[@"title"]);
+        if([word[@"title"] isEqualToString:@"目 : Eye" ]){
+            _vocabularyArray1 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"腹痛 : Stomach" ]){
+            _vocabularyArray2 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"嘔吐" ]){
+            _vocabularyArray3 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"風邪" ]){
+            _vocabularyArray4 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"怪我" ]){
+            _vocabularyArray5 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"受付" ]){
+            _vocabularyArray6 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"その他" ]){
+            _vocabularyArray7 =word[@"words"];
+        }
+    }
+    
+//    _vocabularyArray1 = @[@"目が痛い : I have sore eyes.",
+//                          @"紫外線による目のヤケド : snow blindness",
+//                          @"結膜炎 : pink eye / conjunctivitis",
+//                          @"近視／遠視 : near-sighted／far-sighted",
+//                          @"目の周りにできる黒いアザ : black eye",
+//                          @"目がかすむ : blurry / blurred",
+//                          @"弱視 : lazy eye",
+//                          @"飛蚊症 : floaters"
+//                          ];
+//    
+//    _vocabularyArray2 = @[@"腹痛 : stomachache.",
+//                          @"下痢 : loose bowels",
+//                          @"胃が痛い : I have a pain in my upper stomach.",
+//                          @"けいれん性の腹痛 : abdominal cramps",
+//                          @"生理痛 : cramps",
+//                          @"便秘 : constipation"
+//                          ];
+//    
+//    _vocabularyArray3 = @[@"吐き気がする : I'm nauseated",
+//                          @"ひどい、過度の嘔吐 : severe and excessive vomiting",
+//                          @"嘔吐しました : I vomited.",
+//                          @"昨日何回嘔吐しましたか？ : How many times did you vomit yesterday?",
+//                          @"嘔吐と下痢をする :  vomit and have loose bowels"
+//                          ];
+//    
+//    _vocabularyArray4 = @[@"鼻水 : runny nose",
+//                          @"喉が痛い : I have a sore throat.",
+//                          @"熱 : fever",
+//                          @"咳 : cough",
+//                          @"寒気 : chill",
+//                          @"インフルエンザ : Flu / Influenza",
+//                          @"だるさ : tiredness"
+//                          ];
+//    
+//    _vocabularyArray5 = @[@"打撲 : bruise",
+//                          @"脱臼する : dislocate",
+//                          @"切り傷 : cut",
+//                          @"アキレス腱 : achilles heel",
+//                          @"打撲 : bruise",
+//                          @"骨折 : broke/fractured",
+//                          @"ヒビが入った : fracture",
+//                          @"足首をひねる : twist my ankle",
+//                          @"捻挫する : sprain",
+//                          @"擦りむく : scrape my knee",
+//                          @"たんこぶ : bump",
+//                          @"爪が割れる/剥がれる : break my nail",
+//                          @"すねをぶつける : bang my shin",
+//                          @"つる : have a cramp",
+//                          @"突き指をする : jam my finger",
+//                          @"靱帯を切る : tear a ligament"
+//                          ];
+//    
+//    _vocabularyArray6 = @[@"健康保険証 : health insurance card",
+//                          @"診察申込書 : registration form",
+//                          @"初診 : first visit",
+//                          @"再診 : return visit",
+//                          @"予約 : appointment",
+//                          @"外来患者 : outpatient",
+//                          @"紹介状 : reference from other doctor",
+//                          @"旅行保険 : travel insurance",
+//                          @"問診票 : medical questionnaire",
+//                          @"救急病棟、急患 : emergency",
+//                          @"患者 : patient",
+//                          @"カルテ : a medical record",
+//                          @"家族（血縁関係者）の病気の歴史 : family history",
+//                          @"診断書 : certificate",
+//                          @"支払い : payment/co-payment",
+//                          @"領収書 : receipt"
+//                          ];
+//    
+//    _vocabularyArray7 = @[@"発疹 皮疹 : rash",
+//                          @"アレルギー : Allergy/allergies",
+//                          @"かゆい、かゆみ : itchy/itchiness",
+//                          @"アレルギー反応 : allergic reaction",
+//                          @"関節の痛み : joint pain",
+//                          @"筋肉痛 : have sore muscles",
+//                          @"めまいがする : dizzy",
+//                          @"感染 : infection",
+//                          @"肺炎 : pneumonia",
+//                          @"激痛 : severe pain",
+//                          @"急性の痛み : acute pain",
+//                          @"うずくような痛み : cramping pain",
+//                          @"ずきずきする : throbbing pain",
+//                          @"突っ張り感 : tension",
+//                          @"生理、月経 : period"
+//                          ];
     
     self.vocabularyTableView.delegate = self;
     self.vocabularyTableView.dataSource = self;
@@ -261,10 +192,17 @@
         default:
             break;
     }return x;
-    
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
     
     
     vocabularyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

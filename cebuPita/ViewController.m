@@ -27,6 +27,12 @@
     
     self.title = @"Cebu Pita";
     
+    // 半透明にする.
+    UIColor* tableBackgroundColor = [UIColor blackColor];
+    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
+    
+    [self.myTableView setBackgroundColor:tableBackgroundColor];
+    
     
     
     //レストの内容になる配列を用意する
@@ -60,6 +66,7 @@
     //定数を宣言
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
+    
     
     
     UIGraphicsBeginImageContext(self.view.frame.size);
