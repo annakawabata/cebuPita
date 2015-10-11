@@ -21,6 +21,7 @@
     UIColor* tableBackgroundColor = [UIColor blackColor];
     tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
     
+    
     [self.vocabularyTableView setBackgroundColor:tableBackgroundColor];
     
     

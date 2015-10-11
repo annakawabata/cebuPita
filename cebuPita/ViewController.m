@@ -33,6 +33,17 @@
     
     [self.myTableView setBackgroundColor:tableBackgroundColor];
     
+    // ナビゲーションバーの背景色
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
+    
+    // ナビゲーションバーの「戻る」の色
+    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    
+    //ナビゲーションバーのタイトルの文字の色
+    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+  
+    
     
     
     //レストの内容になる配列を用意する
