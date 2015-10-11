@@ -18,16 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//<<<<<<< HEAD
-//=======
-//    
-//    // 半透明にする.
-//    UIColor* tableBackgroundColor = [UIColor blackColor];
-//    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
-//    
-//    [self.DetailTableView setBackgroundColor:tableBackgroundColor];
-//    
-//>>>>>>> newbranch
+    self.title = @"Cebu Pita";
+    
+    self.DetailTableView.backgroundColor = [UIColor clearColor];
+
     _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"その他：Others"];
     
     self.DetailTableView.delegate = self;
@@ -102,23 +96,18 @@
         cell.backgroundColor = [UIColor colorWithHue:0.45
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:1.0];     // does not work
+                                               alpha:0.6];     // does not work
         
         // does not work
     }
     // For odd
     else {
         cell.textLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray[indexPath.row]];
-        cell.backgroundColor = [UIColor colorWithHue:0.65
+        cell.backgroundColor = [UIColor colorWithHue:0.1
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:1.0];     // does not work
+                                               alpha:0.7];     // does not work
     }
-    //カスタムセルの透明度設定
-    cell.backgroundColor = [UIColor clearColor];
-    tableView.backgroundColor = [UIColor clearColor];
-    
-
     
     return cell;
 

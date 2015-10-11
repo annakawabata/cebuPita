@@ -19,7 +19,7 @@
     // Override point for customization after application launch.
     
     // ナビゲーションバーの背景色
-    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.556 blue:0.776 alpha:1.000];
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.656 blue:0.776 alpha:1.000];
     
     // ナビゲーションバーの「戻る」の色
     [UINavigationBar appearance].tintColor = [UIColor whiteColor];
@@ -27,8 +27,8 @@
     //ナビゲーションバーのタイトルの文字の色
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     
-    //タブバーの背景色
-    [UITabBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.556 blue:0.776 alpha:1.000];
+    
+    [UITabBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.656 blue:0.776 alpha:1.000];
     return YES;
 }
 

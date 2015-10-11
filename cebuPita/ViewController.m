@@ -27,11 +27,8 @@
     
     self.title = @"Cebu Pita";
     
-    // 半透明にする.
-    UIColor* tableBackgroundColor = [UIColor blackColor];
-    tableBackgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
     
-    [self.myTableView setBackgroundColor:tableBackgroundColor];
+    self.myTableView.backgroundColor = [UIColor clearColor];
     
 
 
@@ -95,7 +92,7 @@
         cell.backgroundColor = [UIColor colorWithHue:0.45
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:1.0];     // does not work
+                                               alpha:0.8];     // does not work
 
         // does not work
     }
@@ -103,17 +100,18 @@
     else {
         cell.textLabel.text = @"";
         cell.detailTextLabel.text = @"blue";
-        cell.backgroundColor = [UIColor colorWithHue:0.65
+        cell.backgroundColor = [UIColor colorWithHue:0.1
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:1.0];     // does not work
+                                               alpha:0.6];     // does not work
     }
-    //カスタムセルの透明度設定
-    cell.backgroundColor = [UIColor clearColor];
-    tableView.backgroundColor = [UIColor clearColor];
     
+    //カスタムセルの透明度設定(アルファ値のsettei)
+    //cell.backgroundColor = [UIColor clearColor];
     
-
+    //tableView.backgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
+    //tableView.backgroundColor = [UIColor clearColor];
+    //UIColor *acolor = [color colorWithAlphaComponent:0.5];
     
     return cell;
 }
