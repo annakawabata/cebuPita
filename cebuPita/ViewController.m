@@ -33,18 +33,8 @@
     
     [self.myTableView setBackgroundColor:tableBackgroundColor];
     
-    // ナビゲーションバーの背景色
-    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:0.000 green:0.549 blue:0.890 alpha:1.000];
-    
-    // ナビゲーションバーの「戻る」の色
-    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
-    
-    //ナビゲーションバーのタイトルの文字の色
-    [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
-    
-  
-    
-    
+
+
     
     //レストの内容になる配列を用意する
     _hospitalArray = @[@{@"name":@"Cebu Doctor's Univercity Hospital",@"address":@"Osmeña Boulevard, Cebu City, 6000 Cebu",@"phoneNumber":@"(032) 255 5555,032-516-3341（日本語直通）",@"cost":@"1500ペソ〜",@"time":@"午前9時～午後6時（月～金）,午前9時～12時（土）,24時間救急外来",@"langage":@"日本語可",@"image":@"cebudoc.jpg"},
@@ -118,16 +108,21 @@
                                           brightness:0.99
                                                alpha:1.0];     // does not work
     }
+    //カスタムセルの透明度設定
+    cell.backgroundColor = [UIColor clearColor];
+    tableView.backgroundColor = [UIColor clearColor];
+    
+    
+
     
     return cell;
 }
 
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
-
-
 
 //行が押されたときに反応
 - (void)tableView:(UITableView *)tableView

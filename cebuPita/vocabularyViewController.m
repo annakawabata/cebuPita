@@ -259,6 +259,10 @@
                                                alpha:1.0];     // does not work
     }
     
+    //カスタムセルの透明度設定
+    cell.backgroundColor = [UIColor clearColor];
+    tableView.backgroundColor = [UIColor clearColor];
+    
     return cell;
 }
 

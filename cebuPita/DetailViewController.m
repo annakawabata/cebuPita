@@ -114,6 +114,9 @@
                                           brightness:0.99
                                                alpha:1.0];     // does not work
     }
+    //カスタムセルの透明度設定
+    cell.backgroundColor = [UIColor clearColor];
+    tableView.backgroundColor = [UIColor clearColor];
     
 
     

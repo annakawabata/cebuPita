@@ -20,6 +20,7 @@
 
 
 
+
 @interface ViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
     NSArray *_hospitalArray;
 }
