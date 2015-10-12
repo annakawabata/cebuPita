@@ -154,6 +154,9 @@
         case 6:
             cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray7[indexPath.row]];
             break;
+        case 7:
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray8[indexPath.row]];
+            break;
         default:
             break;
     };
