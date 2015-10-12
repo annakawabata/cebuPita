@@ -92,7 +92,7 @@
         cell.backgroundColor = [UIColor colorWithHue:0.45
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:0.8];     // does not work
+                                               alpha:0.8];
 
         // does not work
     }
@@ -103,7 +103,7 @@
         cell.backgroundColor = [UIColor colorWithHue:0.1
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:0.6];     // does not work
+                                               alpha:0.6];
     }
     
     //カスタムセルの透明度設定(アルファ値のsettei)

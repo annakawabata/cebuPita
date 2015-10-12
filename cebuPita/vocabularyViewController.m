@@ -20,8 +20,10 @@
     
     self.title = @"List";
     
-    self.vocabularyTableView.backgroundColor = [UIColor clearColor];
+    //self.vocabularyText.backgroundColor = [UIColor clearColor];
     
+    self.vocabularyTableView.backgroundColor = [UIColor clearColor];
+
     
     //プロジェクト内のファイルにアクセスするオブジェクトを作成
     NSBundle *bundle = [NSBundle mainBundle];
@@ -127,25 +129,25 @@
     
     switch (self.selectNum) {
         case 0:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray1[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray1[indexPath.row]];
             break;
         case 1:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray2[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray2[indexPath.row]];
             break;
         case 2:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray3[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray3[indexPath.row]];
             break;
         case 3:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray4[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray4[indexPath.row]];
             break;
         case 4:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray5[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray5[indexPath.row]];
             break;
         case 5:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray6[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray6[indexPath.row]];
             break;
         case 6:
-            cell.vocabularyLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray7[indexPath.row]];
+            cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray7[indexPath.row]];
             break;
         default:
             break;
@@ -178,6 +180,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 62;
 }
 
 

@@ -89,6 +89,18 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qfY-eY-MuF">
                                 <rect key="frame" x="0.0" y="-20" width="600" height="600"/>
                             </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="latitude(緯度)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fON-el-jll">
+                                <rect key="frame" x="214" y="430" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="longitude(経度)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9P-hV-4nn">
+                                <rect key="frame" x="199" y="466" width="115" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -99,6 +111,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lati" destination="fON-el-jll" id="d4y-PZ-55x"/>
+                        <outlet property="longi" destination="x9P-hV-4nn" id="ZsY-WV-2d2"/>
                         <outlet property="mapView" destination="qfY-eY-MuF" id="TrI-Uj-YdP"/>
                     </connections>
                 </viewController>

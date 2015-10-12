@@ -159,8 +159,8 @@
     }
     
     //ビュー上のラベルを更新
-//    self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
-//    self.longi.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
+    self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
+    self.longi.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
     
 }
 

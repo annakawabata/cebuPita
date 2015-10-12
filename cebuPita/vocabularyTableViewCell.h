@@ -17,6 +17,7 @@
     NSArray *_vocabularyArray6;
     NSArray *_areaList;
 }
-@property (weak, nonatomic) IBOutlet UILabel *vocabularyLabel;
+
+@property (weak, nonatomic) IBOutlet UITextView *vocabularyText;
 
 @end

@@ -208,10 +208,10 @@
 			children = (
 				1331308E1BC180F8000E757C /* hospital_uketsuke.jpg */,
 				133130891BC11574000E757C /* eye.jpg */,
+				13685D831BBC3E22001F1697 /* cebudental.jpg */,
 				133130821BC1151E000E757C /* injury.jpg */,
 				133130831BC1151E000E757C /* outo.jpg */,
 				133130841BC1151E000E757C /* stomach.jpg */,
-				13685D831BBC3E22001F1697 /* cebudental.jpg */,
 				13685D811BBC3D89001F1697 /* sakura.jpg */,
 				13685D7D1BBC3C80001F1697 /* cebudoc.jpg */,
 				13685D7E1BBC3C80001F1697 /* papatual.jpg */,
