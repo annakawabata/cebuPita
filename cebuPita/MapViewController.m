@@ -91,6 +91,38 @@
     [self.mapView addAnnotation:pin5];
     
     
+    MKPointAnnotation *pin6 = [[MKPointAnnotation alloc] init];
+    pin6.coordinate = CLLocationCoordinate2DMake(10.286099,123.870383);
+    
+    pin6.title = @"セント・アンソニー・マザー & チャイルド・ホスピタル";
+    pin6.subtitle = @"Saint Anthony Mother and Child Hospital";
+    
+    [self.mapView addAnnotation:pin6];
+    
+    MKPointAnnotation *pin7 = [[MKPointAnnotation alloc] init];
+    pin7.coordinate = CLLocationCoordinate2DMake(10.30702,123.896541);
+    
+    pin7.title = @"セブ・ベレス総合病院";
+    pin7.subtitle = @"CEBU VELEZ Hospital";
+    
+    [self.mapView addAnnotation:pin7];
+    
+    MKPointAnnotation *pin8 = [[MKPointAnnotation alloc] init];
+    pin8.coordinate = CLLocationCoordinate2DMake(10.303314,123.891681);
+    
+    pin8.title = @"サクレッド・ハート病院";
+    pin8.subtitle = @"Sacred Heart Hospital";
+    
+    [self.mapView addAnnotation:pin8];
+    
+    MKPointAnnotation *pin9 = [[MKPointAnnotation alloc] init];
+    pin9.coordinate = CLLocationCoordinate2DMake(10.291024,123.961041);
+    
+    pin9.title = @"Mactan Doctor’s Hospital";
+    pin9.subtitle = @"マクタン・ドクターズ病院";
+    
+    [self.mapView addAnnotation:pin9];
+    
     
     /*
      location設定

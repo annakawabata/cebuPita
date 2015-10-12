@@ -38,7 +38,11 @@
                      @{@"name":@"Chong Hua Hospital",@"address":@"Don Mariano Cui Street, Fuente Osmeña, Cebu City, 6000",@"phoneNumber":@"(032) 255 8000",@"cost":@"1500ペソ〜",@"time":@"",@"langage":@"英語",@"image":@"hospitalImage02.jpg"},
                      @{@"name":@"Perpetual Succour Hospital",@"address":@"Gorordo Avenue, Lahug, Cebu City, 6000 Cebu",@"phoneNumber":@"(032) 233 8620",@"cost":@"1500ペソ〜",@"time":@"",@"langage":@"英語",@"image":@"papatual.jpg"},
                      @{@"name":@"Docor Dental Clinic",@"address":@"Miller Hospital 400 Tres de Abril St. Cebu City",@"phoneNumber":@"(032) 238-8012 or (032)261-6082、rodivickdocor@yahoo.com（日本語可）",@"cost":@"VisaとMaster,1000ペソ〜3000ペソ程度",@"time":@"日～金8:30～17:00（17:00～21:00は要予約）",@"langage":@"日本語可",@"image":@"cebudental.jpg"},
-                     @{@"name":@"Sakura Dental Clinic",@"address":@"Alcon Arcade BD. F.Cabahug st. Mabolo Cebu city",@"phoneNumber":@"032-414-0775／0917-771-4061（日本語対応）",@"cost":@"日本の国民健康保険・社会保険などをお持ちの方のために保険用書類を作成してくれます。",@"time":@"午前10時～午後1時／午後2時～午後7時,定休日：フィリピンの祝日・日曜日",@"langage":@"日本語可",@"image":@"sakura.jpg"}
+                     @{@"name":@"Sakura Dental Clinic",@"address":@"Alcon Arcade BD. F.Cabahug st. Mabolo Cebu city",@"phoneNumber":@"032-414-0775／0917-771-4061（日本語対応）",@"cost":@"日本の国民健康保険・社会保険などをお持ちの方のために保険用書類を作成してくれます。",@"time":@"午前10時～午後1時／午後2時～午後7時,定休日：フィリピンの祝日・日曜日",@"langage":@"日本語可",@"image":@"sakura.jpg"},
+                     @{@"name":@"Saint Anthony Mother and Child Hospital",@"address":@"Basak San Nicolas, Cebu City, 6000",@"phoneNumber":@"(032) 261 9989",@"cost":@"800ペソ~",@"time":@"",@"langage":@"英語",@"image":@"SaintAnthony.jpg"},
+                     @{@"name":@"CEBU VELEZ Hospital",@"address":@"F. Ramos St, Cebu City, Cebu",@"phoneNumber":@"(032) 253 1871",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"belez.jpg"},
+                     @{@"name":@"Sacred Heart Hospital Urgello Cebu City - Cebu",@"address":@"J Urgello St. Cebu City、J. Urgello St、Cebu City",@"phoneNumber":@"(032) 418 8410",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"sakured.jpg"},
+                     @{@"name":@"Mactan Doctor’s Hospital",@"address":@"Basak, Lapu-Lapu City, Mactan",@"phoneNumber":@"(032) 255 5555",@"cost":@"1000ペソ~",@"time":@"月曜日～金曜日 9：00～18：00　土曜日 9：00～12：00(２４時間対応)",@"langage":@"英語:日本語可",@"image":@"mactan.jpg"}
                      ];
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;
