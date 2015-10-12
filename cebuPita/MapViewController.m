@@ -131,6 +131,13 @@
     
     [self.mapView addAnnotation:pin10];
     
+    MKPointAnnotation *pin11 = [[MKPointAnnotation alloc] init];
+    pin11.coordinate = CLLocationCoordinate2DMake(10.373479,123.914539);
+    
+    pin11.title = @"ノースジェネラル総合病院";
+    pin11.subtitle = @"North General Hospital";
+    
+    [self.mapView addAnnotation:pin11];
     
     /*
      location設定
