@@ -67,7 +67,7 @@
     MKPointAnnotation *pin3 = [[MKPointAnnotation alloc] init];
     pin3.coordinate = CLLocationCoordinate2DMake(10.315615,123.895822);
     
-    pin3.title = @"パーパチュアル・スコア病院";
+    pin3.title = @"ペルペチュアルスコア総合病院";
     pin3.subtitle = @"Perpetual Succour Hospital";
     
     [self.mapView addAnnotation:pin3];
@@ -122,6 +122,14 @@
     pin9.subtitle = @"マクタン・ドクターズ病院";
     
     [self.mapView addAnnotation:pin9];
+    
+    MKPointAnnotation *pin10 = [[MKPointAnnotation alloc] init];
+    pin10.coordinate = CLLocationCoordinate2DMake(10.232687,123.771336);
+    
+    pin10.title = @"サウスジェネラル総合病院";
+    pin10.subtitle = @"South General Hospital";
+    
+    [self.mapView addAnnotation:pin10];
     
     
     /*

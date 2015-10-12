@@ -42,7 +42,8 @@
                      @{@"name":@"Saint Anthony Mother and Child Hospital",@"address":@"Basak San Nicolas, Cebu City, 6000",@"phoneNumber":@"(032) 261 9989",@"cost":@"800ペソ~",@"time":@"",@"langage":@"英語",@"image":@"SaintAnthony.jpg"},
                      @{@"name":@"CEBU VELEZ Hospital",@"address":@"F. Ramos St, Cebu City, Cebu",@"phoneNumber":@"(032) 253 1871",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"belez.jpg"},
                      @{@"name":@"Sacred Heart Hospital Urgello Cebu City - Cebu",@"address":@"J Urgello St. Cebu City、J. Urgello St、Cebu City",@"phoneNumber":@"(032) 418 8410",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"sakured.jpg"},
-                     @{@"name":@"Mactan Doctor’s Hospital",@"address":@"Basak, Lapu-Lapu City, Mactan",@"phoneNumber":@"(032) 255 5555",@"cost":@"1000ペソ~",@"time":@"月曜日～金曜日 9：00～18：00　土曜日 9：00～12：00(２４時間対応)",@"langage":@"英語:日本語可",@"image":@"mactan.jpg"}
+                     @{@"name":@"Mactan Doctor’s Hospital",@"address":@"Basak, Lapu-Lapu City, Mactan",@"phoneNumber":@"(032) 255 5555",@"cost":@"1000ペソ~",@"time":@"月曜日～金曜日 9：00～18：00　土曜日 9：00～12：00(２４時間対応)",@"langage":@"英語:日本語可",@"image":@"mactan.jpg"},
+                       @{@"name":@"South General Hospital",@"address":@"NATIONAL ROAD, TUYAN, NAGA, CEBU",@"phoneNumber":@"032-272-2020",@"cost":@"セブドクターズ系列総合病院。CT-SCANあり。MRIなし。CMSはER受診と入院で利用できます。",@"time":@"24時間（緊急外来）",@"langage":@"英語",@"image":@"south.jpg"}
                      ];
     self.myTableView.delegate = self;
     self.myTableView.dataSource = self;

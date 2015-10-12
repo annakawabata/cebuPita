@@ -14,6 +14,7 @@
 		132E64851BCC0E0800673546 /* belez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E64841BCC0E0800673546 /* belez.jpg */; };
 		132E64871BCC141C00673546 /* sakured.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E64861BCC141C00673546 /* sakured.jpg */; };
 		132E64891BCC18D400673546 /* mactan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E64881BCC18D400673546 /* mactan.jpg */; };
+		132E648B1BCC1DEC00673546 /* south.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E648A1BCC1DEC00673546 /* south.jpg */; };
 		133130731BBE264F000E757C /* vocabularyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 133130721BBE264F000E757C /* vocabularyViewController.m */; };
 		133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130741BBE31E4000E757C /* vocabularyCell.xib */; };
 		1331307A1BC0FE23000E757C /* DetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 133130791BC0FE23000E757C /* DetailViewCell.xib */; };
@@ -68,6 +69,7 @@
 		132E64841BCC0E0800673546 /* belez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = belez.jpg; sourceTree = "<group>"; };
 		132E64861BCC141C00673546 /* sakured.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakured.jpg; sourceTree = "<group>"; };
 		132E64881BCC18D400673546 /* mactan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mactan.jpg; sourceTree = "<group>"; };
+		132E648A1BCC1DEC00673546 /* south.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = south.jpg; sourceTree = "<group>"; };
 		133130711BBE264F000E757C /* vocabularyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vocabularyViewController.h; sourceTree = "<group>"; };
 		133130721BBE264F000E757C /* vocabularyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = vocabularyViewController.m; sourceTree = "<group>"; };
 		133130741BBE31E4000E757C /* vocabularyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = vocabularyCell.xib; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 		13685D721BBC206D001F1697 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				132E648A1BCC1DEC00673546 /* south.jpg */,
 				132E64881BCC18D400673546 /* mactan.jpg */,
 				132E64861BCC141C00673546 /* sakured.jpg */,
 				132E64841BCC0E0800673546 /* belez.jpg */,
@@ -343,6 +346,7 @@
 				13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */,
 				132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */,
 				133130861BC1151E000E757C /* injury.jpg in Resources */,
+				132E648B1BCC1DEC00673546 /* south.jpg in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
 				132E64851BCC0E0800673546 /* belez.jpg in Resources */,
 				132E647B1BCBDD8200673546 /* cold.jpg in Resources */,

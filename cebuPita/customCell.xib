@@ -14,7 +14,6 @@
                 <subviews>
                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="病院内容hospitalTextView" translatesAutoresizingMaskIntoConstraints="NO" id="hon-Be-NaB">
                         <rect key="frame" x="8" y="37" width="218" height="99.5"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
