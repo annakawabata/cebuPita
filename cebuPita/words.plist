@@ -120,10 +120,10 @@
 				<string>膝を怪我した : I have a back injury.</string>
 				<string>手首を骨折した : I broke my wrist</string>
 				<string>肋骨にヒビが入った : I fractured my rib</string>
-				<string></string>
-				<string></string>
-				<string></string>
-				<string></string>
+				<string>火傷をした : I burnt</string>
+				<string>走っていたら脚を痛めた : I injured my leg running.</string>
+				<string>指を切っちゃった : I cut my finger </string>
+				<string>突き指をした : I jammed my finger</string>
 			</array>
 		</dict>
 		<dict>
