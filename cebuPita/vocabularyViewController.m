@@ -57,8 +57,11 @@
         if([word[@"title"] isEqualToString:@"受付" ]){
             _vocabularyArray6 =word[@"words"];
         }
-        if([word[@"title"] isEqualToString:@"その他" ]){
+        if([word[@"title"] isEqualToString:@"歯科" ]){
             _vocabularyArray7 =word[@"words"];
+        }
+        if([word[@"title"] isEqualToString:@"その他" ]){
+            _vocabularyArray8 =word[@"words"];
         }
     }
     
@@ -104,6 +107,8 @@
         case 6:
             x= (int) _vocabularyArray7.count;
             break;
+        case 7:
+            x= (int) _vocabularyArray8.count;
         default:
             break;
     }return x;

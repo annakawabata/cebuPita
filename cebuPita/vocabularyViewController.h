@@ -17,6 +17,7 @@
     NSArray *_vocabularyArray5;
     NSArray *_vocabularyArray6;
     NSArray *_vocabularyArray7;
+    NSArray *_vocabularyArray8;
     NSArray *_vocabularyList;
 }
 @property (weak, nonatomic) IBOutlet UITableView *vocabularyTableView;

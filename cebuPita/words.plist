@@ -6,6 +6,10 @@
 	<array>
 		<dict>
 			<key>title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>title</key>
 			<string>その他</string>
 			<key>words</key>
 			<array>
@@ -24,6 +28,48 @@
 				<string>ずきずきする : throbbing pain</string>
 				<string>突っ張り感 : tension</string>
 				<string>生理、月経 : period</string>
+			</array>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>歯科</string>
+			<key>words</key>
+			<array>
+				<string>虫歯 : decayed</string>
+				<string>神経 : nerve</string>
+				<string>口をすすぐ : rinse teeth</string>
+				<string>歯垢 : dental plaque</string>
+				<string>歯石 : dental calculus</string>
+				<string>磨く : polish</string>
+				<string>隣接面 : contact surface</string>
+				<string>口臭 : bad breath</string>
+				<string>出血 : bleeding</string>
+				<string>ぐらぐらする : shake</string>
+				<string>歯ぐきが赤く腫れています : The gums are red and swollen.</string>
+				<string>X-ray : レントゲン</string>
+				<string>歯肉 : gingiva</string>
+				<string>顎関節 : mandibular joint</string>
+				<string>人工歯 : artificial teeth</string>
+				<string>親知らず : Wisdom tooth</string>
+				<string>痛くて噛めません : I can't bite because it hurts.</string>
+				<string>乳歯 : Baby teeth</string>
+				<string>永久歯 : Premanent teeth</string>
+				<string>前歯 : Incisor（インサイザー）</string>
+				<string>奥歯 : Back tooth</string>
+				<string>入れ歯 : Denture</string>
+				<string>上 : upper（アッパー ）</string>
+				<string>舌 : lower（ロゥワー）</string>
+				<string>仮歯がとれたんです : My temporary crown came off</string>
+				<string>かぶせ物がとれたんです : My tooth crown came off</string>
+				<string>歯がぐらぐらするんです : My tooth is loose.</string>
+				<string>はぐきが腫れて痛むんです : The gums are swollen and aching.</string>
+				<string>歯が壊れました/折れました : My tooth broke/ fractured.</string>
+				<string>歯がとれました : My tooth came out.</string>
+				<string>歯がズキズキするんです : I have a throbbing toothache</string>
+				<string>冷たいものを飲むと、歯がしみるんです : It feels sensitive when I have cold drinks or food.</string>
+				<string>甘いものを食べると、歯が痛むんです : My tooth hurts when I eat sweet things.</string>
+				<string>眠れないくらい、痛むんです : It hurts so much that I can't sleep.</string>
+				<string>痛くて、そちらでものが咬めません : It hurts so much that I can't eat on the painful side.</string>
 			</array>
 		</dict>
 		<dict>
@@ -70,6 +116,14 @@
 				<string>つる : have a cramp</string>
 				<string>突き指をする : jam my finger</string>
 				<string>靱帯を切る : tear a ligament</string>
+				<string>私は背中を痛めた : I have a back injury</string>
+				<string>膝を怪我した : I have a back injury.</string>
+				<string>手首を骨折した : I broke my wrist</string>
+				<string>肋骨にヒビが入った : I fractured my rib</string>
+				<string></string>
+				<string></string>
+				<string></string>
+				<string></string>
 			</array>
 		</dict>
 		<dict>
@@ -80,10 +134,26 @@
 				<string>鼻水 : runny nose</string>
 				<string>喉が痛い : I have a sore throat.</string>
 				<string>熱 : fever</string>
+				<string>熱がある : I have a fever.</string>
 				<string>咳 : cough</string>
-				<string>寒気 : chill</string>
+				<string>咳がでる : I have a cough.</string>
+				<string>喉が痛い : I have a sore throat</string>
+				<string>寒気 : chill / shiver</string>
 				<string>インフルエンザ : Flu / Influenza</string>
-				<string>だるさ : tiredness</string>
+				<string>風邪気味 : suffering from a slight cold</string>
+				<string>風邪をひかないで : Don't catch a cold</string>
+				<string>君の風邪がうつったよ : I've caught your cold.</string>
+				<string>私は風邪を引きやすい : I tend to catch colds</string>
+				<string>ただの風邪でしょう : You probably just have a cold</string>
+				<string>高熱があります : I have a high fever.</string>
+				<string>扁桃腺 : I have tonsillitis</string>
+				<string>今日は体調不良だ : I’m feeling under the weather</string>
+				<string>具合が悪いので早退していいですか？ : I’m feeling under the weather. Can I leave work early today?</string>
+				<string>頭痛がする : I have a headache</string>
+				<string>身体がだるい : I feel My whole body is heavy</string>
+				<string>インフルエンザ流行ってますよね？ : Flu has been going around, hasn’t it?</string>
+				<string>鼻水が出ますか？ : Do you have a runny nose?</string>
+				<string>熱は計りましたか？ : Have you taken your temperature?</string>
 			</array>
 		</dict>
 		<dict>
@@ -96,6 +166,16 @@
 				<string>嘔吐しました : I vomited.</string>
 				<string>昨日何回嘔吐しましたか？ : How many times did you vomit yesterday?</string>
 				<string>嘔吐と下痢をする :  vomit and have loose bowels</string>
+				<string>吐き気がします : I feel like throwing up</string>
+				<string>吐き気がして、あまり食欲ありません : I feel like vomiting and don't have much of an appetite</string>
+				<string>私は沢山吐いた : I vomited a lot.</string>
+				<string>ひどい、過度の嘔吐 : severe and excessive vomiting</string>
+				<string>胃がムカムカして、吐き気がします : I have an upset stomach and nausea.</string>
+				<string>気分が悪い : I feel sick</string>
+				<string>胃がムカムカする : I feel sick to my stomach</string>
+				<string>吐き気がするのだけど、吐けない : I feel nauseous, but can't throw up</string>
+				<string>下痢嘔吐状態 : It's coming out (of) both ends</string>
+				<string>ウイルス性胃腸炎 : Gastroenteritis / stomach flu</string>
 			</array>
 		</dict>
 		<dict>
@@ -104,10 +184,16 @@
 			<key>words</key>
 			<array>
 				<string>腹痛 : stomachache.</string>
+				<string>お腹が痛いです : I have a stomachache.</string>
+				<string>彼は激しい腹痛に襲われた : He was attacked by a sharp pain in his stomach.</string>
 				<string>下痢 : loose bowels</string>
+				<string>下痢です : I have a diarrhea.</string>
+				<string>私は昨日下痢をした : I had diarrhoea yesterday.</string>
+				<string>生理痛 : cramps / period pains</string>
+				<string>私は生理中です : I’m on my period</string>
+				<string>私は昨日酷い生理痛があった : I had bad cramps yesterday</string>
 				<string>胃が痛い : I have a pain in my upper stomach.</string>
 				<string>けいれん性の腹痛 : abdominal cramps</string>
-				<string>生理痛 : cramps</string>
 				<string>便秘 : constipation</string>
 			</array>
 		</dict>
@@ -124,6 +210,10 @@
 				<string>飛蚊症 : floaters</string>
 				<string>目が痛い : sore eyes</string>
 				<string>目のやけど : snow blindness</string>
+				<string>目が疲れています : I have eyestrain</string>
+				<string>視力が悪くなっていま : my eyesight's getting worse</string>
+				<string>コンタクトを作るために、眼科に行く : I will go to the eye doctor in order to make contacts</string>
+				<string>目がかゆい : It is itchy eyes</string>
 			</array>
 		</dict>
 	</array>

@@ -22,7 +22,7 @@
     
     self.DetailTableView.backgroundColor = [UIColor clearColor];
 
-    _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"その他：Others"];
+    _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"歯科:Dentistry",@"その他：Others"];
     
     self.DetailTableView.delegate = self;
     self.DetailTableView.dataSource = self;
@@ -82,9 +82,12 @@
         cell.imageView.image = [UIImage imageNamed:@"hospital_uketsuke.jpg"];
     }
     if(indexPath.row == 6){
-        cell.imageView.image = [UIImage imageNamed:@"hospital004.jpg"];
-
+        cell.imageView.image = [UIImage imageNamed:@"dental.jpg"];
     }
+    if(indexPath.row == 7){
+        cell.imageView.image = [UIImage imageNamed:@"hospital004.jpg"];
+    }
+    
     
     
     cell.textLabel.text = [NSString stringWithFormat:@"%@",_vocabularyArray[indexPath.row]];
