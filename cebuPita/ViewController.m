@@ -109,7 +109,7 @@
         cell.backgroundColor = [UIColor colorWithHue:0.1
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:0.6];
+                                               alpha:0.8];
     }
     
     //カスタムセルの透明度設定(アルファ値のsettei)

@@ -99,7 +99,7 @@
         cell.backgroundColor = [UIColor colorWithHue:0.45
                                           saturation:0.08
                                           brightness:0.99
-                                               alpha:0.6];     // does not work
+                                               alpha:0.7];     // does not work
         
         // does not work
     }

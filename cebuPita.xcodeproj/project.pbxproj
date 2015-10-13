@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A21BCCB39A00908C72 /* medical_ca_038.png */; };
+		132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A41BCCB5B400908C72 /* medical_ca_055.png */; };
+		132E60A71BCCF20700908C72 /* cebupita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A61BCCF20700908C72 /* cebupita.jpg */; };
 		132E647B1BCBDD8200673546 /* cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647A1BCBDD8200673546 /* cold.jpg */; };
 		132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647C1BCBE25B00673546 /* hospital004.jpg */; };
 		132E647F1BCBE4B000673546 /* dental.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647E1BCBE4B000673546 /* dental.jpg */; };
@@ -41,11 +44,8 @@
 		13685D6C1BBC01A3001F1697 /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D6B1BBC01A3001F1697 /* CustomAnnotation.m */; };
 		13685D6E1BBC07F5001F1697 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13685D6D1BBC07F5001F1697 /* CoreLocation.framework */; };
 		13685D711BBC1C6F001F1697 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685D701BBC1C6F001F1697 /* MapViewController.m */; };
-		13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D731BBC206D001F1697 /* hospitalImage01.jpg */; };
 		13685D761BBC227E001F1697 /* hospitalImage02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D751BBC227E001F1697 /* hospitalImage02.jpg */; };
 		13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D771BBC37E1001F1697 /* hospitalImage03.jpg */; };
-		13685D7B1BBC37E1001F1697 /* medicin.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D781BBC37E1001F1697 /* medicin.jpeg */; };
-		13685D7C1BBC37E1001F1697 /* rennya_14.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D791BBC37E1001F1697 /* rennya_14.jpg */; };
 		13685D7F1BBC3C80001F1697 /* cebudoc.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D7D1BBC3C80001F1697 /* cebudoc.jpg */; };
 		13685D801BBC3C80001F1697 /* papatual.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D7E1BBC3C80001F1697 /* papatual.jpg */; };
 		13685D821BBC3D89001F1697 /* sakura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D811BBC3D89001F1697 /* sakura.jpg */; };
@@ -63,6 +63,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		132E60A21BCCB39A00908C72 /* medical_ca_038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_038.png; path = ../../../../../Downloads/medical_ca_038.png; sourceTree = "<group>"; };
+		132E60A41BCCB5B400908C72 /* medical_ca_055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_055.png; path = ../../../../../Downloads/medical_ca_055.png; sourceTree = "<group>"; };
+		132E60A61BCCF20700908C72 /* cebupita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cebupita.jpg; sourceTree = "<group>"; };
 		132E647A1BCBDD8200673546 /* cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cold.jpg; sourceTree = "<group>"; };
 		132E647C1BCBE25B00673546 /* hospital004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospital004.jpg; sourceTree = "<group>"; };
 		132E647E1BCBE4B000673546 /* dental.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dental.jpg; sourceTree = "<group>"; };
@@ -110,11 +113,8 @@
 		13685D6D1BBC07F5001F1697 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		13685D6F1BBC1C6F001F1697 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		13685D701BBC1C6F001F1697 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		13685D731BBC206D001F1697 /* hospitalImage01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospitalImage01.jpg; sourceTree = "<group>"; };
 		13685D751BBC227E001F1697 /* hospitalImage02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospitalImage02.jpg; sourceTree = "<group>"; };
 		13685D771BBC37E1001F1697 /* hospitalImage03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospitalImage03.jpg; sourceTree = "<group>"; };
-		13685D781BBC37E1001F1697 /* medicin.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = medicin.jpeg; sourceTree = "<group>"; };
-		13685D791BBC37E1001F1697 /* rennya_14.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rennya_14.jpg; sourceTree = "<group>"; };
 		13685D7D1BBC3C80001F1697 /* cebudoc.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cebudoc.jpg; sourceTree = "<group>"; };
 		13685D7E1BBC3C80001F1697 /* papatual.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papatual.jpg; sourceTree = "<group>"; };
 		13685D811BBC3D89001F1697 /* sakura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakura.jpg; sourceTree = "<group>"; };
@@ -224,6 +224,9 @@
 		13685D721BBC206D001F1697 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				132E60A61BCCF20700908C72 /* cebupita.jpg */,
+				132E60A41BCCB5B400908C72 /* medical_ca_055.png */,
+				132E60A21BCCB39A00908C72 /* medical_ca_038.png */,
 				132E648E1BCC20C000673546 /* north.jpg */,
 				132E648A1BCC1DEC00673546 /* south.jpg */,
 				132E64881BCC18D400673546 /* mactan.jpg */,
@@ -243,10 +246,7 @@
 				13685D7D1BBC3C80001F1697 /* cebudoc.jpg */,
 				13685D7E1BBC3C80001F1697 /* papatual.jpg */,
 				13685D771BBC37E1001F1697 /* hospitalImage03.jpg */,
-				13685D781BBC37E1001F1697 /* medicin.jpeg */,
-				13685D791BBC37E1001F1697 /* rennya_14.jpg */,
 				13685D751BBC227E001F1697 /* hospitalImage02.jpg */,
-				13685D731BBC206D001F1697 /* hospitalImage01.jpg */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -333,20 +333,20 @@
 			files = (
 				1331307A1BC0FE23000E757C /* DetailViewCell.xib in Resources */,
 				13685CA81BB12F7E001F1697 /* Main.storyboard in Resources */,
+				132E60A71BCCF20700908C72 /* cebupita.jpg in Resources */,
 				13685D801BBC3C80001F1697 /* papatual.jpg in Resources */,
-				13685D7B1BBC37E1001F1697 /* medicin.jpeg in Resources */,
 				133130871BC1151E000E757C /* outo.jpg in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
+				132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */,
 				132E64831BCC091D00673546 /* SaintAnthony.jpg in Resources */,
 				13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */,
 				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
-				13685D7C1BBC37E1001F1697 /* rennya_14.jpg in Resources */,
 				132E647F1BCBE4B000673546 /* dental.jpg in Resources */,
+				132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */,
 				1331308F1BC180F8000E757C /* hospital_uketsuke.jpg in Resources */,
 				1331308A1BC11574000E757C /* eye.jpg in Resources */,
 				132E64891BCC18D400673546 /* mactan.jpg in Resources */,
 				133130881BC1151E000E757C /* stomach.jpg in Resources */,
-				13685D741BBC206D001F1697 /* hospitalImage01.jpg in Resources */,
 				132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */,
 				133130861BC1151E000E757C /* injury.jpg in Resources */,
 				132E648B1BCC1DEC00673546 /* south.jpg in Resources */,
