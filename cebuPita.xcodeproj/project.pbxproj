@@ -10,6 +10,17 @@
 		132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A21BCCB39A00908C72 /* medical_ca_038.png */; };
 		132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A41BCCB5B400908C72 /* medical_ca_055.png */; };
 		132E60A71BCCF20700908C72 /* cebupita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A61BCCF20700908C72 /* cebupita.jpg */; };
+		132E60C61BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png */; };
+		132E60C71BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png */; };
+		132E60C81BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BE1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@3x.png */; };
+		132E60C91BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BF1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40.png */; };
+		132E60CA1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C01BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png */; };
+		132E60CB1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C11BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png */; };
+		132E60CC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C21BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@2x.png */; };
+		132E60CD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C31BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png */; };
+		132E60CE1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C41BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png */; };
+		132E60CF1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60C51BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png */; };
+		132E60D11BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60D01BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png */; };
 		132E647B1BCBDD8200673546 /* cold.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647A1BCBDD8200673546 /* cold.jpg */; };
 		132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647C1BCBE25B00673546 /* hospital004.jpg */; };
 		132E647F1BCBE4B000673546 /* dental.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E647E1BCBE4B000673546 /* dental.jpg */; };
@@ -66,6 +77,17 @@
 		132E60A21BCCB39A00908C72 /* medical_ca_038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_038.png; path = ../../../../../Downloads/medical_ca_038.png; sourceTree = "<group>"; };
 		132E60A41BCCB5B400908C72 /* medical_ca_055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_055.png; path = ../../../../../Downloads/medical_ca_055.png; sourceTree = "<group>"; };
 		132E60A61BCCF20700908C72 /* cebupita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cebupita.jpg; sourceTree = "<group>"; };
+		132E60BC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-29.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-29.png"; sourceTree = SOURCE_ROOT; };
+		132E60BD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-29@2x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-29@2x.png"; sourceTree = SOURCE_ROOT; };
+		132E60BE1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-29@3x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-29@3x.png"; sourceTree = SOURCE_ROOT; };
+		132E60BF1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-40.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-40.png"; sourceTree = SOURCE_ROOT; };
+		132E60C01BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-40@2x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-40@2x.png"; sourceTree = SOURCE_ROOT; };
+		132E60C11BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-40@3x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-40@3x.png"; sourceTree = SOURCE_ROOT; };
+		132E60C21BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-60@2x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-60@2x.png"; sourceTree = SOURCE_ROOT; };
+		132E60C31BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-60@3x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-60@3x.png"; sourceTree = SOURCE_ROOT; };
+		132E60C41BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-76.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-76.png"; sourceTree = SOURCE_ROOT; };
+		132E60C51BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-76@2x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-76@2x.png"; sourceTree = SOURCE_ROOT; };
+		132E60D01BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29.png"; path = "CebuPita/image/スクリーンショット 2015-10-14 9.48.29.png"; sourceTree = SOURCE_ROOT; };
 		132E647A1BCBDD8200673546 /* cold.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cold.jpg; sourceTree = "<group>"; };
 		132E647C1BCBE25B00673546 /* hospital004.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hospital004.jpg; sourceTree = "<group>"; };
 		132E647E1BCBE4B000673546 /* dental.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dental.jpg; sourceTree = "<group>"; };
@@ -146,7 +168,7 @@
 			children = (
 				13685D6D1BBC07F5001F1697 /* CoreLocation.framework */,
 				13685D621BBBF747001F1697 /* MapKit.framework */,
-				13685C9B1BB12F7E001F1697 /* cebuPita */,
+				13685C9B1BB12F7E001F1697 /* CebuPita */,
 				13685CB51BB12F7E001F1697 /* cebuPitaTests */,
 				13685C9A1BB12F7E001F1697 /* Products */,
 			);
@@ -161,7 +183,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13685C9B1BB12F7E001F1697 /* cebuPita */ = {
+		13685C9B1BB12F7E001F1697 /* CebuPita */ = {
 			isa = PBXGroup;
 			children = (
 				13685CA61BB12F7E001F1697 /* Main.storyboard */,
@@ -187,9 +209,20 @@
 				1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */,
 				133130741BBE31E4000E757C /* vocabularyCell.xib */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
+				132E60BC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png */,
+				132E60BD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png */,
+				132E60BE1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@3x.png */,
+				132E60BF1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40.png */,
+				132E60C01BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png */,
+				132E60C11BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png */,
+				132E60C21BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@2x.png */,
+				132E60C31BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png */,
+				132E60C41BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png */,
+				132E60C51BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png */,
 				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
 			);
+			name = CebuPita;
 			path = cebuPita;
 			sourceTree = "<group>";
 		};
@@ -224,6 +257,7 @@
 		13685D721BBC206D001F1697 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				132E60D01BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png */,
 				132E60A61BCCF20700908C72 /* cebupita.jpg */,
 				132E60A41BCCB5B400908C72 /* medical_ca_055.png */,
 				132E60A21BCCB39A00908C72 /* medical_ca_038.png */,
@@ -337,27 +371,38 @@
 				13685D801BBC3C80001F1697 /* papatual.jpg in Resources */,
 				133130871BC1151E000E757C /* outo.jpg in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
+				132E60C61BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png in Resources */,
 				132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */,
 				132E64831BCC091D00673546 /* SaintAnthony.jpg in Resources */,
 				13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */,
 				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
+				132E60CB1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png in Resources */,
 				132E647F1BCBE4B000673546 /* dental.jpg in Resources */,
 				132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */,
 				1331308F1BC180F8000E757C /* hospital_uketsuke.jpg in Resources */,
+				132E60CA1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png in Resources */,
+				132E60CD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png in Resources */,
 				1331308A1BC11574000E757C /* eye.jpg in Resources */,
 				132E64891BCC18D400673546 /* mactan.jpg in Resources */,
+				132E60C91BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40.png in Resources */,
 				133130881BC1151E000E757C /* stomach.jpg in Resources */,
+				132E60CE1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png in Resources */,
 				132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */,
 				133130861BC1151E000E757C /* injury.jpg in Resources */,
+				132E60D11BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png in Resources */,
 				132E648B1BCC1DEC00673546 /* south.jpg in Resources */,
+				132E60CF1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
 				132E64851BCC0E0800673546 /* belez.jpg in Resources */,
 				132E647B1BCBDD8200673546 /* cold.jpg in Resources */,
 				133130751BBE31E4000E757C /* vocabularyCell.xib in Resources */,
 				13685D821BBC3D89001F1697 /* sakura.jpg in Resources */,
+				132E60C71BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png in Resources */,
 				132E64871BCC141C00673546 /* sakured.jpg in Resources */,
+				132E60CC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@2x.png in Resources */,
 				13685CAA1BB12F7E001F1697 /* Images.xcassets in Resources */,
 				13685D761BBC227E001F1697 /* hospitalImage02.jpg in Resources */,
+				132E60C81BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@3x.png in Resources */,
 				132E648F1BCC20C000673546 /* north.jpg in Resources */,
 				1338E7BE1BC60E4C00B982FA /* words.plist in Resources */,
 				13685D7F1BBC3C80001F1697 /* cebudoc.jpg in Resources */,

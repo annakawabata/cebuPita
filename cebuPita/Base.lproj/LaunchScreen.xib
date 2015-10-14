@@ -16,7 +16,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cebupita.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-KZ-8M7">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="スクリーンショット 2015-10-14 9.48.29.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-KZ-8M7">
                     <rect key="frame" x="52" y="130" width="216" height="207"/>
                 </imageView>
             </subviews>
@@ -32,6 +32,6 @@
         </view>
     </objects>
     <resources>
-        <image name="cebupita.jpg" width="1148" height="1136"/>
+        <image name="スクリーンショット 2015-10-14 9.48.29.png" width="882" height="850"/>
     </resources>
 </document>
