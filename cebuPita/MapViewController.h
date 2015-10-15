@@ -11,7 +11,9 @@
 #import "MapViewController.h"
 #import <CoreLocation/CoreLocation.h>
 
-@interface MapViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>
+@interface MapViewController : UIViewController<MKMapViewDelegate,CLLocationManagerDelegate>{
+    NSArray *_hospitalArray;
+}
 
 
 @property (nonatomic) CLLocationManager *locationManager;

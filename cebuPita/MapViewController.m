@@ -30,6 +30,52 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //デリゲートとはどこに指示が書いているか
+    //経路を表示するために必要なこと(このコントローラーに指示が書いてあることを教えている)
+    self.mapView.delegate = self;
+    //経路表示
+    //出発地
+    CLLocationCoordinate2D fromCoordinate = ;
+    //到着地
+    CLLocationCoordinate2D toCoordinate = CLLocationCoordinate2DMake(,);
+    
+    MKPlacemark *fromPlacemark = [[MKPlacemark alloc] initWithCoordinate:fromCoordinate
+                                                       addressDictionary:nil];
+    MKPlacemark *toPlacemark   = [[MKPlacemark alloc] initWithCoordinate:toCoordinate
+                                                       addressDictionary:nil];
+    
+    MKMapItem *fromItem = [[MKMapItem alloc] initWithPlacemark:fromPlacemark];
+    MKMapItem *toItem   = [[MKMapItem alloc] initWithPlacemark:toPlacemark];
+    
+    // MKMapItem をセットして MKDirectionsRequest を生成
+    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+    request.source = fromItem;
+    request.destination = toItem;
+    request.requestsAlternateRoutes = YES;
+    
+    // MKDirectionsRequest から MKDirections を生成
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
+    
+    // 経路検索を実行
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
+     {
+         if (error) return;
+         
+         if ([response.routes count] > 0)
+         {
+             MKRoute *route = [response.routes objectAtIndex:0];
+             NSLog(@"distance: %.2f meter", route.distance);
+             
+             // 地図上にルートを描画
+             [self.mapView addOverlay:route.polyline];
+         }
+     }];
+    
+    
+    
+    //----------------------------------------------------
+    
       //縮尺を指定
      MKCoordinateRegion cr = _mapView.region;
     
@@ -44,7 +90,7 @@
     [_mapView setRegion:cr];
     
     
-    //地図の表示種類の設定r
+    //地図の表示種類の設定
     self.mapView.mapType = MKMapTypeStandard;
     MKPointAnnotation *pin1 = [[MKPointAnnotation alloc] init];
     pin1.coordinate = CLLocationCoordinate2DMake(10.314564,123.891777);
@@ -164,13 +210,18 @@
         self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
         //最小移動間隔
         self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
-        //        self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
+        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
         
         //測位開始
         [self.locationManager startUpdatingLocation];
         
         
     }
+}
+
+//行数を返す
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _hospitalArray.count;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -209,6 +260,7 @@
 }
     //ピンを表示する際に発動されるデリゲートメソッド
     //ピンが降ってくるアニメーションの設定
+
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
 
 
@@ -233,5 +285,23 @@
     
     return pinView;
 }
+
+// 地図上に描画するルートの色などを指定（これを実装しないと何も表示されない）
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView
+            rendererForOverlay:(id<MKOverlay>)overlay
+{
+    if ([overlay isKindOfClass:[MKPolyline class]])
+    {
+        MKPolyline *route = overlay;
+        MKPolylineRenderer *routeRenderer = [[MKPolylineRenderer alloc] initWithPolyline:route];
+        routeRenderer.lineWidth = 5.0;
+        routeRenderer.strokeColor = [UIColor orangeColor];
+        return routeRenderer;
+    }
+    else {
+        return nil;
+    }
+}
+
 
 @end

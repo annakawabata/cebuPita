@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A21BCCB39A00908C72 /* medical_ca_038.png */; };
-		132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A41BCCB5B400908C72 /* medical_ca_055.png */; };
 		132E60A71BCCF20700908C72 /* cebupita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 132E60A61BCCF20700908C72 /* cebupita.jpg */; };
 		132E60C61BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png */; };
 		132E60C71BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 132E60BD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png */; };
@@ -74,8 +72,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		132E60A21BCCB39A00908C72 /* medical_ca_038.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_038.png; path = ../../../../../Downloads/medical_ca_038.png; sourceTree = "<group>"; };
-		132E60A41BCCB5B400908C72 /* medical_ca_055.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medical_ca_055.png; path = ../../../../../Downloads/medical_ca_055.png; sourceTree = "<group>"; };
 		132E60A61BCCF20700908C72 /* cebupita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cebupita.jpg; sourceTree = "<group>"; };
 		132E60BC1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-29.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-29.png"; sourceTree = SOURCE_ROOT; };
 		132E60BD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "スクリーンショット 2015-10-14 9.48.29-29@2x.png"; path = "CebuPita/iOS/AppIcon.appiconset/スクリーンショット 2015-10-14 9.48.29-29@2x.png"; sourceTree = SOURCE_ROOT; };
@@ -259,8 +255,6 @@
 			children = (
 				132E60D01BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png */,
 				132E60A61BCCF20700908C72 /* cebupita.jpg */,
-				132E60A41BCCB5B400908C72 /* medical_ca_055.png */,
-				132E60A21BCCB39A00908C72 /* medical_ca_038.png */,
 				132E648E1BCC20C000673546 /* north.jpg */,
 				132E648A1BCC1DEC00673546 /* south.jpg */,
 				132E64881BCC18D400673546 /* mactan.jpg */,
@@ -372,13 +366,11 @@
 				133130871BC1151E000E757C /* outo.jpg in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
 				132E60C61BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-29.png in Resources */,
-				132E60A51BCCB5B400908C72 /* medical_ca_055.png in Resources */,
 				132E64831BCC091D00673546 /* SaintAnthony.jpg in Resources */,
 				13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */,
 				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
 				132E60CB1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@3x.png in Resources */,
 				132E647F1BCBE4B000673546 /* dental.jpg in Resources */,
-				132E60A31BCCB39A00908C72 /* medical_ca_038.png in Resources */,
 				1331308F1BC180F8000E757C /* hospital_uketsuke.jpg in Resources */,
 				132E60CA1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-40@2x.png in Resources */,
 				132E60CD1BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png in Resources */,
