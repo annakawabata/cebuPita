@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     // ナビゲーションバーの背景色
     [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:1 green:0.656 blue:0.776 alpha:1.000];
     

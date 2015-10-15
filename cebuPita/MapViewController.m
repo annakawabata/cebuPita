@@ -171,61 +171,12 @@
         
         
     }
-    
-//    //ユーザの回転を許可しない
-//    self.mapView.rotateEnabled = NO;
-//    
-//    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
-//    request.source = _locationManager;
-//    request.destination = pin1;
-//    request.requestsAlternateRoutes = YES;
-//    
-//    // リクエストをセットしてルート探索開始！
-//    MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
-//    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error) {
-//        if (error) {
-//            NSLog(@"error : %@", error);
-//            return;
-//        }
-//        
-//        // 見つかったルートを全てオーバーレイとして追加する
-//        for (MKRoute *route in response.routes) {
-//            [self.mapView addOverlay:route.polyline];
-//        }
-//    }];
 }
-//- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
-//{
-//    MKPolylineRenderer *renderer = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
-//    renderer.lineWidth = 4.0;
-//    
-//    // インデックスに応じて5色に振り分ける
-//    NSInteger index = [mapView.overlays indexOfObject:overlay];
-//    
-//    if (index % 5 == 1) {
-//        renderer.strokeColor = [UIColor redColor];
-//    } else if (index % 5 == 2) {
-//        renderer.strokeColor = [UIColor yellowColor];
-//    } else if (index % 5 == 3) {
-//        renderer.strokeColor = [UIColor greenColor];
-//    } else if (index % 5 == 4) {
-//        renderer.strokeColor = [UIColor blueColor];
-//    } else {
-//        renderer.strokeColor = [UIColor purpleColor];
-//    }
-//    
-//    return renderer;
-//}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-   
 }
 
-
-/*
- CLLocationManagerDelegate
- */
 //位置情報更新時に呼ばれる
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
 {

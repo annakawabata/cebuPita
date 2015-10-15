@@ -27,6 +27,8 @@
     
     self.title = @"Cebu Pita";
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     
     self.myTableView.backgroundColor = [UIColor clearColor];
     
@@ -99,8 +101,6 @@
                                           saturation:0.08
                                           brightness:0.99
                                                alpha:0.8];
-
-        // does not work
     }
     // For odd
     else {
@@ -111,14 +111,6 @@
                                           brightness:0.99
                                                alpha:0.8];
     }
-    
-    //カスタムセルの透明度設定(アルファ値のsettei)
-    //cell.backgroundColor = [UIColor clearColor];
-    
-    //tableView.backgroundColor = [tableBackgroundColor colorWithAlphaComponent:0.3];
-    //tableView.backgroundColor = [UIColor clearColor];
-    //UIColor *acolor = [color colorWithAlphaComponent:0.5];
-    
     return cell;
 }
 

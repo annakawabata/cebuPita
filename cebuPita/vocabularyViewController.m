@@ -20,6 +20,8 @@
     
     self.title = @"List";
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     //self.vocabularyText.backgroundColor = [UIColor clearColor];
     
     self.vocabularyTableView.backgroundColor = [UIColor clearColor];
@@ -126,12 +128,7 @@
     
     
     vocabularyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil){//セルという定数をつけている
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//    }
-    
-    
-    
+
     switch (self.selectNum) {
         case 0:
             cell.vocabularyText.text = [NSString stringWithFormat:@"%@",_vocabularyArray1[indexPath.row]];
@@ -181,13 +178,11 @@
                                           brightness:0.99
                                                alpha:0.7];     // does not work
     }
-    
     return cell;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

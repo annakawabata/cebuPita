@@ -20,6 +20,8 @@
     
     self.title = @"Cebu Pita";
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
     self.DetailTableView.backgroundColor = [UIColor clearColor];
 
     _vocabularyArray = @[@"目：Eye" ,@"腹痛：Stomach",@"吐き気：Vomiting",@"風邪：cold",@"怪我：Injury",@"受付：Reception",@"歯科:Dentistry",@"その他：Others"];
