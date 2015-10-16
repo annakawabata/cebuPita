@@ -8,8 +8,15 @@
 
 #import "MapViewController.h"
 #import "CustomAnnotation.h"
-
-@interface MapViewController ()<MKMapViewDelegate>
+#import "AppDelegate.h"
+@interface MapViewController ()<MKMapViewDelegate>{
+    AppDelegate *_appDelegate;
+    
+    //変数に現在地の位置情報を入れる
+    //この変数が下で使える
+    double _startLati;
+    double _startlongi;
+}
 
 
 @end
@@ -36,9 +43,9 @@
     self.mapView.delegate = self;
     //経路表示
     //出発地
-    CLLocationCoordinate2D fromCoordinate = ;
+    CLLocationCoordinate2D fromCoordinate = CLLocationCoordinate2DMake(_startLati, _startlongi);
     //到着地
-    CLLocationCoordinate2D toCoordinate = CLLocationCoordinate2DMake(,);
+    CLLocationCoordinate2D toCoordinate = CLLocationCoordinate2DMake(_appDelegate.endLati, _appDelegate.endLongi);
     
     MKPlacemark *fromPlacemark = [[MKPlacemark alloc] initWithCoordinate:fromCoordinate
                                                        addressDictionary:nil];
@@ -236,16 +243,19 @@
     
     //最新の位置情報を取得し、そこからマップの中心座標を決定
     CLLocation *currentLocation = locations.lastObject;
-    CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
+//    CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
     //縮尺度を指定
-    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.04, 0.05); //数が小さいほど拡大率アップ
+//    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.04, 0.05); //数が小さいほど拡大率アップ
     
     //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
-    if (alreadyStartingCoordinateSet_ == NO) {
-        MKCoordinateRegion newRegion = MKCoordinateRegionMake(centerCoordinate, coordinateSpan);
-        [self.mapView setRegion:newRegion animated:YES];
-        alreadyStartingCoordinateSet_ = YES;
-    }
+//    if (alreadyStartingCoordinateSet_ == NO) {
+//        MKCoordinateRegion newRegion = MKCoordinateRegionMake(centerCoordinate, coordinateSpan);
+//        [self.mapView setRegion:newRegion animated:YES];
+//        alreadyStartingCoordinateSet_ = YES;
+//    }
+    
+    _startLati = currentLocation.coordinate.latitude;
+    _startlongi = currentLocation.coordinate.longitude;
     
     //ビュー上のラベルを更新
     self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
