@@ -114,6 +114,9 @@
                                                alpha:0.7];     // does not work
     }
     
+    if (self.view.bounds.size.height == 480) {
+        cell.imageView.frame = CGRectMake(0,0,10,10);
+    }
     return cell;
 
 }

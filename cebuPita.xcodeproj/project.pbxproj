@@ -182,6 +182,7 @@
 		13685C9B1BB12F7E001F1697 /* CebuPita */ = {
 			isa = PBXGroup;
 			children = (
+				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685CA61BB12F7E001F1697 /* Main.storyboard */,
 				13685CA01BB12F7E001F1697 /* AppDelegate.h */,
 				13685CA11BB12F7E001F1697 /* AppDelegate.m */,
@@ -215,7 +216,6 @@
 				132E60C31BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-60@3x.png */,
 				132E60C41BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76.png */,
 				132E60C51BCDEC4500908C72 /* スクリーンショット 2015-10-14 9.48.29-76@2x.png */,
-				13685CAB1BB12F7E001F1697 /* LaunchScreen.xib */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
 			);
 			name = CebuPita;

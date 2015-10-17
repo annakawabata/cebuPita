@@ -18,7 +18,7 @@
 
 
 @interface ViewController (){
-    AppDelegate *_appdeligate;
+    AppDelegate *_appDelegate;
 }
 
 @end
@@ -132,8 +132,11 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSLog(@"lati = %f",lati);
     NSLog(@"longi = %f",longi);
     
-    _appdeligate.endLati = lati;
-    _appdeligate.endLongi = longi;
+    _appDelegate.endLati = lati;
+    _appDelegate.endLongi = longi;
+    
+    NSLog(@"lati = %f",_appDelegate.endLati);
+    NSLog(@"longi = %f",_appDelegate.endLongi);
     
     //遷移(せんい)先画面のカプセル化(インスタンス化)
     //（移動した先の画面を実体化、指定できるよにした）

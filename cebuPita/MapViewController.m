@@ -18,7 +18,6 @@
     double _startlongi;
 }
 
-
 @end
 
 @implementation MapViewController {
@@ -26,59 +25,54 @@
     BOOL alreadyStartingCoordinateSet_; //YES：セット済み NO：未セット
 }
 
-- (id)init {
-    if (self = [super init]) {
-        alreadyStartingCoordinateSet_ = NO;
-    }
-    return  self;
-}
+//- (id)init {
+//    if (self = [super init]) {
+//        alreadyStartingCoordinateSet_ = NO;
+//    }
+//    return  self;
+//}
 
 //@synthesize mapView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /*
+     location設定
+     */
+    //ユーザーによる位置情報サービスの許可状態をチェック
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusRestricted ||
+        [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)
+    {
+        //ユーザーはこのアプリによる位置情報サービスの利用を許可していない、または「設定」で無効にしている
+        NSLog(@"Location services is unauthorized.");
+    }
+    else {
+        //位置情報サービスを利用できる、またはまだ利用許可要求を行っていない
+        self.locationManager = [[CLLocationManager alloc] init];
+        self.locationManager.delegate = self;
+        
+        //利用許可要求をまだ行っていない状態であれば要求
+        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+            //許可の要求
+            //アプリがフォアグラウンドにある間のみ位置情報サービスを使用する許可を要求
+            [self.locationManager requestWhenInUseAuthorization];
+        }
+        //精度要求
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
+        //最小移動間隔
+        self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
+        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
+        
+        //測位開始
+        [self.locationManager startUpdatingLocation];
+        
+        
+    }
+    
     //デリゲートとはどこに指示が書いているか
     //経路を表示するために必要なこと(このコントローラーに指示が書いてあることを教えている)
     self.mapView.delegate = self;
-    //経路表示
-    //出発地
-    CLLocationCoordinate2D fromCoordinate = CLLocationCoordinate2DMake(_startLati, _startlongi);
-    //到着地
-    CLLocationCoordinate2D toCoordinate = CLLocationCoordinate2DMake(_appDelegate.endLati, _appDelegate.endLongi);
-    
-    MKPlacemark *fromPlacemark = [[MKPlacemark alloc] initWithCoordinate:fromCoordinate
-                                                       addressDictionary:nil];
-    MKPlacemark *toPlacemark   = [[MKPlacemark alloc] initWithCoordinate:toCoordinate
-                                                       addressDictionary:nil];
-    
-    MKMapItem *fromItem = [[MKMapItem alloc] initWithPlacemark:fromPlacemark];
-    MKMapItem *toItem   = [[MKMapItem alloc] initWithPlacemark:toPlacemark];
-    
-    // MKMapItem をセットして MKDirectionsRequest を生成
-    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
-    request.source = fromItem;
-    request.destination = toItem;
-    request.requestsAlternateRoutes = YES;
-    
-    // MKDirectionsRequest から MKDirections を生成
-    MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
-    
-    // 経路検索を実行
-    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
-     {
-         if (error) return;
-         
-         if ([response.routes count] > 0)
-         {
-             MKRoute *route = [response.routes objectAtIndex:0];
-             NSLog(@"distance: %.2f meter", route.distance);
-             
-             // 地図上にルートを描画
-             [self.mapView addOverlay:route.polyline];
-         }
-     }];
-    
     
     
     //----------------------------------------------------
@@ -192,41 +186,10 @@
     
     [self.mapView addAnnotation:pin11];
     
-    /*
-     location設定
-     */
-    //ユーザーによる位置情報サービスの許可状態をチェック
-    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusRestricted ||
-        [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)
-    {
-        //ユーザーはこのアプリによる位置情報サービスの利用を許可していない、または「設定」で無効にしている
-        NSLog(@"Location services is unauthorized.");
-    }
-    else {
-        //位置情報サービスを利用できる、またはまだ利用許可要求を行っていない
-        self.locationManager = [[CLLocationManager alloc] init];
-        self.locationManager.delegate = self;
-        
-        //利用許可要求をまだ行っていない状態であれば要求
-        if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
-            //許可の要求
-            //アプリがフォアグラウンドにある間のみ位置情報サービスを使用する許可を要求
-            [self.locationManager requestWhenInUseAuthorization];
-        }
-        //精度要求
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters;
-        //最小移動間隔
-        self.locationManager.distanceFilter = 100.0;                    //100m 移動ごとに通知
-        //self.locationManager.distanceFilter = kCLDistanceFilterNone;    //全ての動きを通知（デフォルト）
-        
-        //測位開始
-        [self.locationManager startUpdatingLocation];
-        
-        
-    }
+  
 }
 
-//行数を返す
+    //行数を返す
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _hospitalArray.count;
 }
@@ -235,45 +198,16 @@
     [super didReceiveMemoryWarning];
 }
 
-//位置情報更新時に呼ばれる
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    //ユーザの位置を表示するかどうか
-    self.mapView.showsUserLocation = YES;
-    
-    //最新の位置情報を取得し、そこからマップの中心座標を決定
-    CLLocation *currentLocation = locations.lastObject;
-//    CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
-    //縮尺度を指定
-//    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.04, 0.05); //数が小さいほど拡大率アップ
-    
-    //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
-//    if (alreadyStartingCoordinateSet_ == NO) {
-//        MKCoordinateRegion newRegion = MKCoordinateRegionMake(centerCoordinate, coordinateSpan);
-//        [self.mapView setRegion:newRegion animated:YES];
-//        alreadyStartingCoordinateSet_ = YES;
-//    }
-    
-    _startLati = currentLocation.coordinate.latitude;
-    _startlongi = currentLocation.coordinate.longitude;
-    
-    //ビュー上のラベルを更新
-    self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
-    self.longi.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
-    
-}
-
-//測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
+    //測位失敗時・位置情報の利用をユーザーが「不許可」とした場合などに呼ばれる
 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
 {
     NSLog(@"didFailWithError.");
 }
     //ピンを表示する際に発動されるデリゲートメソッド
     //ピンが降ってくるアニメーションの設定
-
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
-
-
+    
+    
     //現在地表示なら nil を返す
     if(annotation == mapView.userLocation){
         return nil;
@@ -296,7 +230,74 @@
     return pinView;
 }
 
-// 地図上に描画するルートの色などを指定（これを実装しないと何も表示されない）
+
+    //位置情報更新時に呼ばれる
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    //ユーザの位置を表示するかどうか
+    self.mapView.showsUserLocation = YES;
+    
+    //最新の位置情報を取得し、そこからマップの中心座標を決定
+    CLLocation *currentLocation = locations.lastObject;
+    CLLocationCoordinate2D centerCoordinate = currentLocation.coordinate;
+    //縮尺度を指定
+    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.04, 0.05); //数が小さいほど拡大率アップ
+    
+    //設定した縮尺で現在地を中心としたマップをセット（初回1回のみ）
+    if (alreadyStartingCoordinateSet_ == NO) {
+        MKCoordinateRegion newRegion = MKCoordinateRegionMake(centerCoordinate, coordinateSpan);
+        [self.mapView setRegion:newRegion animated:YES];
+        alreadyStartingCoordinateSet_ = YES;
+    }
+    
+    _startLati = currentLocation.coordinate.latitude;
+    _startlongi = currentLocation.coordinate.longitude;
+    
+    //経路表示
+    //出発地
+    CLLocationCoordinate2D fromCoordinate = CLLocationCoordinate2DMake(_startLati, _startlongi);
+    //到着地
+    CLLocationCoordinate2D toCoordinate = CLLocationCoordinate2DMake(_appDelegate.endLati, _appDelegate.endLongi);
+    
+    MKPlacemark *fromPlacemark = [[MKPlacemark alloc] initWithCoordinate:fromCoordinate
+                                                       addressDictionary:nil];
+    MKPlacemark *toPlacemark   = [[MKPlacemark alloc] initWithCoordinate:toCoordinate
+                                                       addressDictionary:nil];
+    
+    MKMapItem *fromItem = [[MKMapItem alloc] initWithPlacemark:fromPlacemark];
+    MKMapItem *toItem   = [[MKMapItem alloc] initWithPlacemark:toPlacemark];
+    
+    // MKMapItem をセットして MKDirectionsRequest を生成
+    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+    request.source = fromItem;
+    request.destination = toItem;
+    request.requestsAlternateRoutes = YES;
+    
+    // MKDirectionsRequest から MKDirections を生成
+    MKDirections *directions = [[MKDirections alloc] initWithRequest:request];
+    
+    // 経路検索を実行
+    [directions calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
+     {
+         if (error) return;
+         
+         if ([response.routes count] > 0)
+         {
+             MKRoute *route = [response.routes objectAtIndex:0];
+             NSLog(@"distance: %.2f meter", route.distance);
+             
+             // 地図上にルートを描画
+             [self.mapView addOverlay:route.polyline];
+         }
+     }];
+    
+    //ビュー上のラベルを更新
+    self.lati.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.latitude];
+    self.longi.text = [NSString stringWithFormat:@"%f", currentLocation.coordinate.longitude];
+    
+}
+
+    // 地図上に描画するルートの色などを指定（これを実装しないと何も表示されない）
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView
             rendererForOverlay:(id<MKOverlay>)overlay
 {

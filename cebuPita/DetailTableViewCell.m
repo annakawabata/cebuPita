@@ -11,8 +11,7 @@
 @implementation DetailTableViewCell
 
 - (void)awakeFromNib {
-    
-
+   
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
