@@ -59,6 +59,8 @@
     //使用する
     [self.myTableView registerNib:nib forCellReuseIdentifier:@"Cell"];
     
+    //座標を保存するために初期化
+    _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
 }
 

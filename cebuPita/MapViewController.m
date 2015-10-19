@@ -186,6 +186,9 @@
     
     [self.mapView addAnnotation:pin11];
     
+    //座標を保存するために初期化
+    _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    
   
 }
 
@@ -306,7 +309,7 @@
         MKPolyline *route = overlay;
         MKPolylineRenderer *routeRenderer = [[MKPolylineRenderer alloc] initWithPolyline:route];
         routeRenderer.lineWidth = 5.0;
-        routeRenderer.strokeColor = [UIColor orangeColor];
+        routeRenderer.strokeColor = [UIColor cyanColor];
         return routeRenderer;
     }
     else {

@@ -10,14 +10,18 @@
             <rect key="frame" x="0.0" y="0.0" width="329" height="418"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="スクリーンショット 2015-10-14 9.48.29.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-KZ-8M7">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="スクリーンショット 2015-10-14 9.48.29.png" translatesAutoresizingMaskIntoConstraints="NO" id="cbB-KZ-8M7">
                     <rect key="frame" x="37" y="96" width="255" height="226"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="226" id="1z7-Gf-Av8"/>
+                        <constraint firstAttribute="width" constant="255" id="G7n-3W-ep4"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="centerY" secondItem="cbB-KZ-8M7" secondAttribute="centerY" id="kPc-8t-bK0"/>
-                <constraint firstAttribute="centerX" secondItem="cbB-KZ-8M7" secondAttribute="centerX" id="uDe-qX-Jo4"/>
+                <constraint firstAttribute="centerX" secondItem="cbB-KZ-8M7" secondAttribute="centerX" id="Ox2-Ho-iYy"/>
+                <constraint firstAttribute="centerY" secondItem="cbB-KZ-8M7" secondAttribute="centerY" id="hxS-W4-2K9"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
