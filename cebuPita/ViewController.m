@@ -45,7 +45,7 @@
                      @{@"name":@"CEBU VELEZ Hospital",@"address":@"F. Ramos St, Cebu City, Cebu",@"phoneNumber":@"(032) 253 1871",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"belez.jpg",@"lati":@"10.30702",@"longi":@"123.896541"},
                      @{@"name":@"Sacred Heart Hospital Urgello Cebu City",@"address":@"J Urgello St. Cebu City、J. Urgello St、Cebu City",@"phoneNumber":@"(032) 418 8410",@"cost":@"詳細なし",@"time":@"詳細なし",@"langage":@"英語",@"image":@"sakured.jpg",@"lati":@"10.303314",@"longi":@"123.891681"},
                      @{@"name":@"Mactan Doctor’s Hospital",@"address":@"Basak, Lapu-Lapu City, Mactan",@"phoneNumber":@"(032) 255 5555",@"cost":@"1000ペソ~",@"time":@"月曜日～金曜日 9：00～18：00　土曜日 9：00～12：00(２４時間対応)",@"langage":@"英語:日本語可",@"image":@"mactan.jpg",@"lati":@"10.291024",@"longi":@"123.961041"},
-                     @{@"name":@"South General Hospital",@"address":@"NATIONAL ROAD, TUYAN, NAGA, CEBU",@"phoneNumber":@"032-272-2020",@"cost":@"セブドクターズ系列総合病院。CT-SCANあり。MRIなし。CMSはER受診と入院で利用できます。",@"time":@"24時間（緊急外来）",@"langage":@"英語",@"image":@"south.jpg",@"lati":@"10.232687",@"longi":@"123.771336"},
+                     @{@"name":@"South General Hospital",@"address":@"NATIONAL ROAD, TUYAN, NAGA, CEBU",@"phoneNumber":@"032-272-2020",@"cost":@"セブドクターズ系列総合病院。CT-SCANあり。MRIなし。CMSはER受診と入院で利用できます。",@"time":@"24時間（緊急外来）",@"langage":@"英語",@"image":@"south.jpg",@"lati":@"10.233738",@"longi":@"123.773475"},
                      @{@"name":@"CEBU NORTH GENERAL HOSPITAL",@"address":@"KAUSWAGAN ROAD, TALAMBAN CITY, CEBU",@"phoneNumber":@"032-343-7777",@"cost":@"セブドクターズ系列総合病院。　CT-SCANあり。MRIなし。　CMSはER受診と入院で利用できます。",@"time":@"24時間（緊急外来）",@"langage":@"英語",@"image":@"north.jpg",@"lati":@"10.373479",@"longi":@"123.914539"}
                      ];
     self.myTableView.delegate = self;
@@ -62,6 +62,15 @@
     //座標を保存するために初期化
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
+    
 }
 
 
@@ -75,15 +84,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
-    
-    
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
-    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
-    
+
     
     //セルの再利用(id名をつける)
     customCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
