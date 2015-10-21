@@ -124,7 +124,7 @@
     pin4.coordinate = CLLocationCoordinate2DMake(10.296605,123.88854);
     
     pin4.title = @"ドクターデンタルクリニック";
-    pin4.subtitle = @"Docor Dental Clinic";
+    pin4.subtitle = @"Doctor Dental Clinic";
     
     [self.mapView addAnnotation:pin4];
     

@@ -35,6 +35,42 @@
       "idiom" : "iphone",
       "filename" : "スクリーンショット 2015-10-14 9.48.29-60@3x.png",
       "scale" : "3x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-29.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "29x29",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-29@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-40.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "40x40",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-40@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-76.png",
+      "scale" : "1x"
+    },
+    {
+      "size" : "76x76",
+      "idiom" : "ipad",
+      "filename" : "スクリーンショット 2015-10-14 9.48.29-76@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

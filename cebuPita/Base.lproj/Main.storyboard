@@ -166,11 +166,13 @@
             </objects>
             <point key="canvasLocation" x="2307" y="352"/>
         </scene>
-        <!--HOME-->
+        <!--Hospital-->
         <scene sceneID="fnZ-hD-TyU">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e9f-0b-6aa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="HOME" id="IN6-HS-dV1"/>
+                    <tabBarItem key="tabBarItem" title="Hospital" image="Hospital.png" id="IN6-HS-dV1">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2VN-xm-I5S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -204,13 +206,11 @@
             </objects>
             <point key="canvasLocation" x="83" y="-100"/>
         </scene>
-        <!--Vocabulary-->
+        <!--vocabulary-->
         <scene sceneID="Fyo-11-pRs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BTp-2V-Imh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="5" title="Vocabulary" id="OPt-lr-Ghz">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="vocabulary" image="anketo.png" id="OPt-lr-Ghz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2FU-o0-vug">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -226,4 +226,8 @@
             <point key="canvasLocation" x="915" y="352"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hospital.png" width="64" height="64"/>
+        <image name="anketo.png" width="64" height="64"/>
+    </resources>
 </document>

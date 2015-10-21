@@ -50,6 +50,9 @@
 		13685D801BBC3C80001F1697 /* papatual.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D7E1BBC3C80001F1697 /* papatual.jpg */; };
 		13685D821BBC3D89001F1697 /* sakura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D811BBC3D89001F1697 /* sakura.jpg */; };
 		13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 13685D831BBC3E22001F1697 /* cebudental.jpg */; };
+		13AE19541BD5EA4B00A4BD9F /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 13AE19531BD5EA4B00A4BD9F /* AppIcon.appiconset */; };
+		13E1AA241BD725A200DF8AEE /* anketo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E1AA221BD725A200DF8AEE /* anketo@2x.png */; };
+		13E1AA251BD725A200DF8AEE /* Hospital@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 13E1AA231BD725A200DF8AEE /* Hospital@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		13685D7E1BBC3C80001F1697 /* papatual.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papatual.jpg; sourceTree = "<group>"; };
 		13685D811BBC3D89001F1697 /* sakura.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sakura.jpg; sourceTree = "<group>"; };
 		13685D831BBC3E22001F1697 /* cebudental.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cebudental.jpg; sourceTree = "<group>"; };
+		13AE19531BD5EA4B00A4BD9F /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = image/iOS/AppIcon.appiconset; sourceTree = "<group>"; };
+		13E1AA221BD725A200DF8AEE /* anketo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "anketo@2x.png"; sourceTree = "<group>"; };
+		13E1AA231BD725A200DF8AEE /* Hospital@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hospital@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,7 @@
 				1331308C1BC133B4000E757C /* vocabularyTableViewCell.m */,
 				133130741BBE31E4000E757C /* vocabularyCell.xib */,
 				13685CA91BB12F7E001F1697 /* Images.xcassets */,
+				13AE19531BD5EA4B00A4BD9F /* AppIcon.appiconset */,
 				13685C9C1BB12F7E001F1697 /* Supporting Files */,
 			);
 			name = CebuPita;
@@ -226,6 +233,8 @@
 		13685D721BBC206D001F1697 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				13E1AA221BD725A200DF8AEE /* anketo@2x.png */,
+				13E1AA231BD725A200DF8AEE /* Hospital@2x.png */,
 				132E60D01BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png */,
 				132E60A61BCCF20700908C72 /* cebupita.jpg */,
 				132E648E1BCC20C000673546 /* north.jpg */,
@@ -338,18 +347,21 @@
 				13685D801BBC3C80001F1697 /* papatual.jpg in Resources */,
 				133130871BC1151E000E757C /* outo.jpg in Resources */,
 				13685CAD1BB12F7E001F1697 /* LaunchScreen.xib in Resources */,
+				13E1AA251BD725A200DF8AEE /* Hospital@2x.png in Resources */,
 				132E64831BCC091D00673546 /* SaintAnthony.jpg in Resources */,
 				13685D841BBC3E22001F1697 /* cebudental.jpg in Resources */,
 				13685D271BB4DA90001F1697 /* customCell.xib in Resources */,
 				132E647F1BCBE4B000673546 /* dental.jpg in Resources */,
 				1331308F1BC180F8000E757C /* hospital_uketsuke.jpg in Resources */,
 				1331308A1BC11574000E757C /* eye.jpg in Resources */,
+				13E1AA241BD725A200DF8AEE /* anketo@2x.png in Resources */,
 				132E64891BCC18D400673546 /* mactan.jpg in Resources */,
 				133130881BC1151E000E757C /* stomach.jpg in Resources */,
 				132E647D1BCBE25B00673546 /* hospital004.jpg in Resources */,
 				133130861BC1151E000E757C /* injury.jpg in Resources */,
 				132E60D11BCDECC000908C72 /* スクリーンショット 2015-10-14 9.48.29.png in Resources */,
 				132E648B1BCC1DEC00673546 /* south.jpg in Resources */,
+				13AE19541BD5EA4B00A4BD9F /* AppIcon.appiconset in Resources */,
 				13685D7A1BBC37E1001F1697 /* hospitalImage03.jpg in Resources */,
 				132E64851BCC0E0800673546 /* belez.jpg in Resources */,
 				132E647B1BCBDD8200673546 /* cold.jpg in Resources */,
