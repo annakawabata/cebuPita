@@ -62,14 +62,7 @@
     //座標を保存するために初期化
     _appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
-    
-    
-    UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
-    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
+
     
 }
 
@@ -84,6 +77,14 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *CellIdentifier = @"Cell";
     
+    
+    
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"hospitalImage03.jpg"] drawInRect:self.view.bounds];
+    UIImage *backgroundImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:backgroundImage];
 
     
     //セルの再利用(id名をつける)

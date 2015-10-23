@@ -227,7 +227,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Hospital.png" width="64" height="64"/>
-        <image name="anketo.png" width="64" height="64"/>
+        <image name="Hospital.png" width="30" height="30"/>
+        <image name="anketo.png" width="30" height="30"/>
     </resources>
 </document>
